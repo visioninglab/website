@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: visioninglab/website
+  branch: main
+  app_id: Ov23likolmA1SIPyxeIG
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: essays
+    label: Essays
+    folder: content/essays
+    extension: mdx
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Tags, name: tags, widget: list, default: [] }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: projects
+    label: Projects
+    folder: content/projects
+    extension: mdx
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Status, name: status, widget: select, options: ["Active", "Ongoing", "Completed"], default: "Active" }
+      - { label: Year, name: year, widget: string }
+      - { label: Tags, name: tags, widget: list, default: [] }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: External URL, name: external, widget: string, required: false }
+      - { label: Partners, name: partners, widget: list, required: false, default: [] }
+      - { label: Role, name: role, widget: string, required: false, default: "Co-development / R&D partner" }
+      - { label: Outputs, name: outputs, widget: list, required: false, default: [] }
+      - { label: Body, name: body, widget: markdown }
