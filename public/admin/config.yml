@@ -6,7 +6,6 @@ backend:
   repo: visioninglab/website
   branch: main
   app_id: Ov23likolmA1SIPyxeIG
-  base_url: https://github.com
 
 media_folder: public/images
 public_folder: /images
