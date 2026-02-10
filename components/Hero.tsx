@@ -13,17 +13,17 @@ export default function Hero({ latestEssaySlug }: HeroProps) {
     <section className="relative flex min-h-screen items-center overflow-hidden">
       {/* Colourful gradient background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-background to-lavender/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-lavender/5" />
         {/* Teal orb — top right */}
-        <div className="absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-primary/15 blur-[120px]" />
+        <div className="absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-primary/20 blur-[120px]" />
         {/* Pink orb — centre left */}
-        <div className="absolute top-1/3 -left-24 h-[400px] w-[400px] rounded-full bg-accent/12 blur-[100px]" />
+        <div className="absolute top-1/3 -left-24 h-[400px] w-[400px] rounded-full bg-accent/15 blur-[100px]" />
         {/* Blue orb — bottom right */}
-        <div className="absolute bottom-24 right-1/4 h-[350px] w-[350px] rounded-full bg-glow/10 blur-[100px]" />
+        <div className="absolute bottom-24 right-1/4 h-[350px] w-[350px] rounded-full bg-glow/12 blur-[100px]" />
         {/* Lavender orb — top left (subtle) */}
-        <div className="absolute top-20 left-1/4 h-[300px] w-[300px] rounded-full bg-lavender/8 blur-[80px]" />
+        <div className="absolute top-20 left-1/4 h-[300px] w-[300px] rounded-full bg-lavender/15 blur-[80px]" />
         {/* Fade to background at bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pt-32 pb-20">
