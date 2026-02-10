@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import { Source_Serif_4 } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,6 +17,8 @@ const sourceSerif = Source_Serif_4({
   weight: ["400", "600", "700"],
 });
 
+const basePath = process.env.NODE_ENV === "production" ? "/website" : "";
+
 export const metadata: Metadata = {
   title: {
     default: "Visioning Lab",
@@ -23,6 +26,9 @@ export const metadata: Metadata = {
   },
   description:
     "Research lab at the intersection of ontological thinking, infrastructure systems, and immersive technology.",
+  icons: {
+    icon: `${basePath}/favicon.ico`,
+  },
   openGraph: {
     title: "Visioning Lab",
     description:
@@ -40,13 +46,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${sourceSerif.variable} antialiased`}
+        className={`${geistSans.variable} ${sourceSerif.variable} bg-background text-foreground antialiased`}
       >
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <Providers>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );

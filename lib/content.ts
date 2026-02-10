@@ -28,6 +28,9 @@ export interface ProjectFrontmatter {
   tags: string[];
   featured: boolean;
   external?: string;
+  partners?: string[];
+  role?: string;
+  outputs?: string[];
 }
 
 export interface Project {

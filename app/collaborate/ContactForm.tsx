@@ -2,7 +2,13 @@
 
 import { useState, type FormEvent } from "react";
 
-const categories = ["Research", "Speaking", "Commissions", "Exhibitions", "Other"];
+const categories = [
+  "Research",
+  "Speaking",
+  "Commissions",
+  "Exhibitions",
+  "Other",
+];
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -15,10 +21,10 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="flex items-center justify-center rounded border border-neutral-200 p-12">
+      <div className="flex items-center justify-center rounded-xl border border-border bg-card p-12">
         <div className="text-center">
           <p className="text-lg font-medium">Thank you</p>
-          <p className="mt-2 text-sm text-neutral-500">
+          <p className="mt-2 text-sm text-muted-foreground">
             We will be in touch soon.
           </p>
         </div>
@@ -37,7 +43,7 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          className="mt-1 block w-full border border-neutral-200 bg-white px-3 py-2 text-sm outline-none focus:border-neutral-900"
+          className="mt-1 block w-full rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground outline-none focus:border-primary"
         />
       </div>
 
@@ -50,7 +56,7 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          className="mt-1 block w-full border border-neutral-200 bg-white px-3 py-2 text-sm outline-none focus:border-neutral-900"
+          className="mt-1 block w-full rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground outline-none focus:border-primary"
         />
       </div>
 
@@ -61,7 +67,7 @@ export default function ContactForm() {
         <select
           id="category"
           name="category"
-          className="mt-1 block w-full border border-neutral-200 bg-white px-3 py-2 text-sm outline-none focus:border-neutral-900"
+          className="mt-1 block w-full rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground outline-none focus:border-primary"
         >
           {categories.map((cat) => (
             <option key={cat} value={cat}>
@@ -80,13 +86,13 @@ export default function ContactForm() {
           name="message"
           rows={5}
           required
-          className="mt-1 block w-full border border-neutral-200 bg-white px-3 py-2 text-sm outline-none focus:border-neutral-900"
+          className="mt-1 block w-full rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground outline-none focus:border-primary"
         />
       </div>
 
       <button
         type="submit"
-        className="inline-flex items-center border border-neutral-900 bg-neutral-900 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-white hover:text-neutral-900"
+        className="inline-flex items-center rounded-lg bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
       >
         Send message
       </button>

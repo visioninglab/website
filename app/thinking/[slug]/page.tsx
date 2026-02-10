@@ -43,10 +43,10 @@ export default async function EssayPage({ params }: PageProps) {
   const content = await renderMDX(essay.content);
 
   return (
-    <article className="mx-auto max-w-5xl px-6 py-16 md:py-24">
+    <article className="mx-auto max-w-6xl px-6 pt-32 pb-16 md:pb-24">
       <Link
         href="/thinking"
-        className="text-sm text-neutral-400 hover:text-neutral-600"
+        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
       >
         &larr; Back to Thinking
       </Link>
@@ -55,7 +55,7 @@ export default async function EssayPage({ params }: PageProps) {
         <h1 className="max-w-2xl font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-4xl">
           {essay.frontmatter.title}
         </h1>
-        <p className="mt-4 text-sm text-neutral-400">
+        <p className="mt-4 text-sm text-muted-foreground">
           {new Date(essay.frontmatter.date).toLocaleDateString("en-GB", {
             day: "numeric",
             month: "long",
@@ -67,7 +67,10 @@ export default async function EssayPage({ params }: PageProps) {
         {essay.frontmatter.tags.length > 0 && (
           <div className="mt-3 flex flex-wrap gap-2">
             {essay.frontmatter.tags.map((tag) => (
-              <span key={tag} className="text-xs text-neutral-400">
+              <span
+                key={tag}
+                className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
+              >
                 {tag}
               </span>
             ))}

@@ -2,37 +2,39 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-50">
-      <div className="mx-auto max-w-5xl px-6 py-12">
-        <div className="flex flex-col gap-8 md:flex-row md:justify-between">
+    <footer className="border-t border-border">
+      <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div>
-            <p className="text-sm font-semibold">Visioning Lab</p>
-            <p className="mt-1 text-sm text-neutral-500">
-              Research. Build. Question.
+            <p className="font-[family-name:var(--font-source-serif)] text-base font-bold">
+              Visioning<span className="text-gradient">Lab</span>
+            </p>
+            <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Co-developing research and innovation for complex systems.
             </p>
           </div>
 
-          <div className="flex gap-12">
+          <div className="flex gap-16">
             <div>
-              <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
+              <p className="text-xs font-medium uppercase tracking-widest text-primary">
                 Navigate
               </p>
-              <div className="mt-3 flex flex-col gap-2">
+              <div className="mt-4 flex flex-col gap-3">
                 <Link
                   href="/thinking"
-                  className="text-sm text-neutral-600 hover:text-neutral-900"
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Thinking
                 </Link>
                 <Link
                   href="/projects"
-                  className="text-sm text-neutral-600 hover:text-neutral-900"
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Projects
                 </Link>
                 <Link
                   href="/about"
-                  className="text-sm text-neutral-600 hover:text-neutral-900"
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   About
                 </Link>
@@ -40,19 +42,19 @@ export default function Footer() {
             </div>
 
             <div>
-              <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
+              <p className="text-xs font-medium uppercase tracking-widest text-primary">
                 Connect
               </p>
-              <div className="mt-3 flex flex-col gap-2">
+              <div className="mt-4 flex flex-col gap-3">
                 <Link
                   href="/collaborate"
-                  className="text-sm text-neutral-600 hover:text-neutral-900"
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Collaborate
                 </Link>
                 <a
                   href="mailto:hello@visioninglab.com"
-                  className="text-sm text-neutral-600 hover:text-neutral-900"
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Email
                 </a>
@@ -61,8 +63,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-neutral-200 pt-6">
-          <p className="text-xs text-neutral-400">
+        <div className="mt-16 border-t border-border pt-8">
+          <p className="text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()} Visioning Lab. All rights
             reserved.
           </p>

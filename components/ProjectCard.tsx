@@ -7,47 +7,53 @@ export default function ProjectCard({ project }: { project: Project }) {
     : `/projects/${project.slug}`;
 
   const isExternal = !!project.frontmatter.external;
+  const role = project.frontmatter.role || "Co-development / R&D partner";
 
   return (
-    <article className="group border border-neutral-200 p-6 transition-colors hover:border-neutral-400">
-      <div className="flex items-start justify-between">
-        <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
-          {project.frontmatter.status}
-          <span className="mx-2">&middot;</span>
-          {project.frontmatter.year}
-        </p>
-        {isExternal && (
-          <span className="text-xs text-neutral-400">&nearr;</span>
-        )}
-      </div>
-
+    <article className="group">
       <Link
         href={href}
         {...(isExternal
           ? { target: "_blank", rel: "noopener noreferrer" }
           : {})}
-        className="mt-3 block"
+        className="block rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
       >
-        <h3 className="text-lg font-medium tracking-tight group-hover:underline">
+        <div className="flex items-start justify-between">
+          <div className="flex items-center gap-3">
+            {project.frontmatter.tags[0] && (
+              <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                {project.frontmatter.tags[0]}
+              </span>
+            )}
+            <p className="text-xs text-muted-foreground">
+              {project.frontmatter.status}
+              <span className="mx-2">&middot;</span>
+              {project.frontmatter.year}
+            </p>
+          </div>
+          {isExternal && (
+            <span className="text-xs text-muted-foreground">&nearr;</span>
+          )}
+        </div>
+
+        <h3 className="mt-4 text-lg font-semibold tracking-tight transition-colors group-hover:text-primary">
           {project.frontmatter.title}
         </h3>
-        <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           {project.frontmatter.summary}
         </p>
-      </Link>
 
-      {project.frontmatter.tags.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-2">
-          {project.frontmatter.tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs text-neutral-400"
-            >
-              {tag}
-            </span>
-          ))}
+        <div className="mt-4 space-y-1">
+          <p className="text-xs text-muted-foreground">{role}</p>
+          {project.frontmatter.partners &&
+            project.frontmatter.partners.length > 0 && (
+              <p className="text-xs text-muted-foreground">
+                <span className="text-muted-foreground/60">With </span>
+                {project.frontmatter.partners.join(", ")}
+              </p>
+            )}
         </div>
-      )}
+      </Link>
     </article>
   );
 }

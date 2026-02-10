@@ -1,42 +1,67 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navigation = [
   { name: "Thinking", href: "/thinking" },
   { name: "Projects", href: "/projects" },
   { name: "About", href: "/about" },
-  { name: "Collaborate", href: "/collaborate" },
 ];
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="border-b border-neutral-200">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
-        <Link href="/" className="text-lg font-semibold tracking-tight">
-          Visioning Lab
+    <motion.header
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-background/90 backdrop-blur-xl border-b border-border"
+          : ""
+      }`}
+    >
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+        <Link
+          href="/"
+          className="font-[family-name:var(--font-source-serif)] text-xl font-bold tracking-tight"
+        >
+          Visioning<span className="text-gradient">Lab</span>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex md:gap-8">
+        <div className="hidden md:flex md:items-center md:gap-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm text-neutral-600 transition-colors hover:text-neutral-900"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {item.name}
             </Link>
           ))}
+          <Link
+            href="/collaborate"
+            className="rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Get in Touch
+          </Link>
         </div>
 
         {/* Mobile menu button */}
         <button
           type="button"
-          className="md:hidden"
+          className="text-foreground md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -65,22 +90,36 @@ export default function Header() {
       </nav>
 
       {/* Mobile menu */}
-      {mobileMenuOpen && (
-        <div className="border-t border-neutral-200 md:hidden">
-          <div className="mx-auto max-w-5xl space-y-1 px-6 py-4">
-            {navigation.map((item) => (
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden md:hidden"
+          >
+            <div className="flex flex-col gap-4 px-6 pb-6">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-base text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {item.name}
+                </Link>
+              ))}
               <Link
-                key={item.name}
-                href={item.href}
-                className="block py-2 text-sm text-neutral-600 hover:text-neutral-900"
+                href="/collaborate"
                 onClick={() => setMobileMenuOpen(false)}
+                className="rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground"
               >
-                {item.name}
+                Get in Touch
               </Link>
-            ))}
-          </div>
-        </div>
-      )}
-    </header>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.header>
   );
 }
