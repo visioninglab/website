@@ -3,15 +3,16 @@
 :root {
   --background: #0f1318;
   --foreground: #e8e2d6;
-  --primary: #e07a2f;
+  --primary: #0CB5A7;
   --primary-foreground: #0f1318;
   --muted: #181d24;
-  --muted-foreground: #7a7f88;
+  --muted-foreground: #8a8f98;
   --border: #252a33;
-  --accent: #3db89a;
-  --glow: #f0983a;
+  --accent: #E472A0;
+  --glow: #2EA3E5;
   --card: #161b22;
   --card-foreground: #e8e2d6;
+  --lavender: #BDA5D4;
 }
 
 @theme inline {
@@ -26,6 +27,7 @@
   --color-glow: var(--glow);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+  --color-lavender: var(--lavender);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-source-serif);
@@ -42,7 +44,19 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(135deg, var(--primary), var(--glow));
+  background-image: linear-gradient(135deg, var(--primary), var(--accent), var(--lavender));
+}
+
+/* Gradient logo — uses the white wordmark as a mask, fills with brand gradient */
+.logo-gradient {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--glow), var(--accent), var(--lavender));
+  -webkit-mask-image: var(--logo-url);
+  mask-image: var(--logo-url);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 /* Editorial prose styling for MDX content */

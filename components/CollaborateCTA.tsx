@@ -20,10 +20,7 @@ export default function CollaborateCTA() {
             <EditableText contentKey="cta.label" defaultValue="Get in Touch" />
           </p>
           <h2 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-4xl">
-            <EditableText
-              contentKey="cta.heading"
-              defaultValue="Let's work together"
-            />
+            Let&apos;s work <span className="text-gradient">together</span>
           </h2>
           <EditableText
             contentKey="cta.description"

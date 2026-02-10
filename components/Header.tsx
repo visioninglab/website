@@ -32,11 +32,11 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-source-serif)] text-xl font-bold tracking-tight"
-        >
-          Visioning<span className="text-gradient">Lab</span>
+        <Link href="/" className="flex items-center gap-2" aria-label="Visioning Lab home">
+          <div
+            className="logo-gradient h-10 w-[230px]"
+            style={{ "--logo-url": "url(/images/logo-wordmark.png)" } as React.CSSProperties}
+          />
         </Link>
 
         {/* Desktop nav */}

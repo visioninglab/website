@@ -19,7 +19,7 @@ export default function ProjectsPage() {
           Projects
         </p>
         <h1 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-4xl">
-          Research & Development
+          Research & <span className="text-gradient">Development</span>
         </h1>
         <p className="mt-3 max-w-xl text-muted-foreground">
           Research projects spanning ontology tools, immersive experiences, and

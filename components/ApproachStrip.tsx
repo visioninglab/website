@@ -33,10 +33,7 @@ export default function ApproachStrip() {
             <EditableText contentKey="approach.label" defaultValue="What We Do" />
           </p>
           <h2 className="max-w-3xl font-[family-name:var(--font-source-serif)] text-3xl font-bold md:text-4xl">
-            <EditableText
-              contentKey="approach.heading"
-              defaultValue="A lab for transformative ideas"
-            />
+            A lab for <span className="text-gradient">transformative</span> ideas
           </h2>
           <EditableText
             contentKey="approach.description"

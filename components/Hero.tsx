@@ -11,10 +11,19 @@ interface HeroProps {
 export default function Hero({ latestEssaySlug }: HeroProps) {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
-      {/* Subtle gradient background */}
+      {/* Colourful gradient background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-background to-accent/5" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-background to-lavender/5" />
+        {/* Teal orb — top right */}
+        <div className="absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-primary/15 blur-[120px]" />
+        {/* Pink orb — centre left */}
+        <div className="absolute top-1/3 -left-24 h-[400px] w-[400px] rounded-full bg-accent/12 blur-[100px]" />
+        {/* Blue orb — bottom right */}
+        <div className="absolute bottom-24 right-1/4 h-[350px] w-[350px] rounded-full bg-glow/10 blur-[100px]" />
+        {/* Lavender orb — top left (subtle) */}
+        <div className="absolute top-20 left-1/4 h-[300px] w-[300px] rounded-full bg-lavender/8 blur-[80px]" />
+        {/* Fade to background at bottom */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pt-32 pb-20">
@@ -36,13 +45,12 @@ export default function Hero({ latestEssaySlug }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <EditableText
-              contentKey="hero.title"
-              defaultValue="Co-developing research for complex systems — across infrastructure, policy and emerging technology"
-              as="h1"
-              multiline
-              className="font-[family-name:var(--font-source-serif)] text-4xl font-bold leading-[1.05] sm:text-5xl md:text-7xl"
-            />
+            <h1 className="font-[family-name:var(--font-source-serif)] text-4xl font-bold leading-[1.05] sm:text-5xl md:text-7xl">
+              Co-developing <span className="text-gradient">research</span> for
+              complex systems — across{" "}
+              <span className="text-gradient">infrastructure</span>, policy and{" "}
+              <span className="text-gradient">emerging technology</span>
+            </h1>
           </motion.div>
 
           <motion.div

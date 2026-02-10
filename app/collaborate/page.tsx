@@ -16,7 +16,7 @@ export default function CollaboratePage() {
           Get in Touch
         </p>
         <h1 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-4xl">
-          Collaborate
+          <span className="text-gradient">Collaborate</span>
         </h1>
         <p className="mt-3 max-w-xl text-muted-foreground">
           We are always open to meaningful collaboration. Whether you have a

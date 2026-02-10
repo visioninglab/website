@@ -6,9 +6,12 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div>
-            <p className="font-[family-name:var(--font-source-serif)] text-base font-bold">
-              Visioning<span className="text-gradient">Lab</span>
-            </p>
+            <div
+              className="logo-gradient h-5 w-[120px]"
+              style={{ "--logo-url": "url(/images/logo-wordmark.png)" } as React.CSSProperties}
+              role="img"
+              aria-label="Visioning Lab"
+            />
             <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Co-developing research and innovation for complex systems.
             </p>

@@ -19,7 +19,7 @@ export default function ThinkingPage() {
           Thinking
         </p>
         <h1 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-4xl">
-          Essays & Position Pieces
+          Essays & <span className="text-gradient">Position Pieces</span>
         </h1>
         <p className="mt-3 max-w-xl text-muted-foreground">
           Essays and position pieces on ontology, infrastructure, and immersive

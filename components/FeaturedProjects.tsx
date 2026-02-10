@@ -17,7 +17,7 @@ export default function FeaturedProjects({
                 Projects
               </p>
               <h2 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold md:text-4xl">
-                Recent Work
+                Recent <span className="text-gradient">Work</span>
               </h2>
             </div>
             <Link

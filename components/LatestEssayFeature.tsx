@@ -8,7 +8,7 @@ export default function LatestEssayFeature({ essay }: { essay: Essay }) {
       <div className="mx-auto max-w-6xl px-6">
         <FadeIn>
           <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-            Latest Thinking
+            Latest <span className="text-gradient">Thinking</span>
           </p>
           <Link href={`/thinking/${essay.slug}`} className="group mt-6 block">
             <h2 className="max-w-2xl font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight transition-colors group-hover:text-primary md:text-4xl">
