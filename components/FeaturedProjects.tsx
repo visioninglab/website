@@ -3,6 +3,8 @@ import Image from "next/image";
 import type { Project } from "@/lib/content";
 import FadeIn from "./FadeIn";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function FeaturedProjects({
   projects,
 }: {
@@ -49,7 +51,7 @@ export default function FeaturedProjects({
                   {project.frontmatter.image && (
                     <div className="relative h-48 w-full overflow-hidden bg-muted md:h-56">
                       <Image
-                        src={project.frontmatter.image}
+                        src={`${basePath}${project.frontmatter.image}`}
                         alt={project.frontmatter.title}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"

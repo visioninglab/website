@@ -3,6 +3,8 @@ import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import FounderBio from "@/components/FounderBio";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
   title: "About",
   description:
@@ -104,7 +106,7 @@ export default function AboutPage() {
       <FadeIn>
         <div className="relative mt-20 h-64 w-full overflow-hidden rounded-2xl md:h-80">
           <Image
-            src="/images/collaboratorium.png"
+            src={`${basePath}/images/collaboratorium.png`}
             alt="Collaboratorium — a virtual environment for academic collaboration"
             fill
             className="object-cover"

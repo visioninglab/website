@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Project } from "@/lib/content";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function ProjectCard({ project }: { project: Project }) {
   const href = project.frontmatter.external
     ? project.frontmatter.external
@@ -22,7 +24,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.frontmatter.image && (
           <div className="relative h-40 w-full overflow-hidden bg-muted">
             <Image
-              src={project.frontmatter.image}
+              src={`${basePath}${project.frontmatter.image}`}
               alt={project.frontmatter.title}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

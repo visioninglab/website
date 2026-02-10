@@ -4,6 +4,8 @@ import Image from "next/image";
 import FadeIn from "./FadeIn";
 import EditableText from "./EditableText";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function FounderBio() {
   return (
     <div className="mt-24 border-t border-border pt-24">
@@ -16,7 +18,7 @@ export default function FounderBio() {
         <FadeIn className="md:col-span-2">
           <div className="overflow-hidden rounded-xl border border-border">
             <Image
-              src="/images/jessica-symons.jpg"
+              src={`${basePath}/images/jessica-symons.jpg`}
               alt="Dr Jessica Symons demonstrating augmented reality technology at an exhibition"
               width={1024}
               height={683}
