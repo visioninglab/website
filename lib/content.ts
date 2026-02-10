@@ -27,6 +27,7 @@ export interface ProjectFrontmatter {
   year: string;
   tags: string[];
   featured: boolean;
+  image?: string;
   external?: string;
   partners?: string[];
   role?: string;

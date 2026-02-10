@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Project } from "@/lib/content";
 import FadeIn from "./FadeIn";
 
@@ -43,9 +44,19 @@ export default function FeaturedProjects({
                   {...(isExternal
                     ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
-                  className="group block rounded-xl border border-border bg-card p-8 transition-all hover:border-primary/40 md:p-10"
+                  className="group block overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/40"
                 >
-                  <div className="flex flex-col gap-6 md:flex-row md:items-center md:gap-10">
+                  {project.frontmatter.image && (
+                    <div className="relative h-48 w-full overflow-hidden bg-muted md:h-56">
+                      <Image
+                        src={project.frontmatter.image}
+                        alt={project.frontmatter.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
+                  <div className="flex flex-col gap-6 p-8 md:flex-row md:items-center md:gap-10 md:p-10">
                     <div className="flex-1">
                       <div className="mb-3 flex items-center gap-3">
                         {project.frontmatter.tags[0] && (

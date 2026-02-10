@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import FounderBio from "@/components/FounderBio";
 
@@ -99,6 +100,20 @@ export default function AboutPage() {
           </div>
         </FadeIn>
       </div>
+
+      <FadeIn>
+        <div className="relative mt-20 h-64 w-full overflow-hidden rounded-2xl md:h-80">
+          <Image
+            src="/images/collaboratorium.png"
+            alt="Collaboratorium — a virtual environment for academic collaboration"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <p className="mt-3 text-center text-xs text-muted-foreground">
+          The Collaboratorium — a virtual space for collaborative research
+        </p>
+      </FadeIn>
 
       <FounderBio />
     </div>

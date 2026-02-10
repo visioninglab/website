@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Project } from "@/lib/content";
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -16,8 +17,19 @@ export default function ProjectCard({ project }: { project: Project }) {
         {...(isExternal
           ? { target: "_blank", rel: "noopener noreferrer" }
           : {})}
-        className="block rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
+        className="block overflow-hidden rounded-xl border border-border bg-card transition-colors hover:border-primary/40"
       >
+        {project.frontmatter.image && (
+          <div className="relative h-40 w-full overflow-hidden bg-muted">
+            <Image
+              src={project.frontmatter.image}
+              alt={project.frontmatter.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+        )}
+        <div className="p-6">
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3">
             {project.frontmatter.tags[0] && (
@@ -52,6 +64,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 {project.frontmatter.partners.join(", ")}
               </p>
             )}
+        </div>
         </div>
       </Link>
     </article>
