@@ -10,6 +10,8 @@ const navigation = [
   { name: "About", href: "/about" },
 ];
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,7 +37,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2" aria-label="Visioning Lab home">
           <div
             className="logo-gradient h-10 w-[230px]"
-            style={{ "--logo-url": "url(/images/logo-wordmark.png)" } as React.CSSProperties}
+            style={{ "--logo-url": `url(${basePath}/images/logo-wordmark.png)` } as React.CSSProperties}
           />
         </Link>
 

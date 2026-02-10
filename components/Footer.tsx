@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Footer() {
   return (
     <footer className="border-t border-border">
@@ -8,7 +10,7 @@ export default function Footer() {
           <div>
             <div
               className="logo-gradient h-5 w-[120px]"
-              style={{ "--logo-url": "url(/images/logo-wordmark.png)" } as React.CSSProperties}
+              style={{ "--logo-url": `url(${basePath}/images/logo-wordmark.png)` } as React.CSSProperties}
               role="img"
               aria-label="Visioning Lab"
             />
