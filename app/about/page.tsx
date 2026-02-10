@@ -33,7 +33,7 @@ export default function AboutPage() {
       <div className="mt-16 grid items-start gap-16 md:grid-cols-2">
         <FadeIn>
           <div className="prose">
-            <h2>What We Do</h2>
+            <h2>What we do</h2>
             <p>
               Visioning Lab is a research lab that works at the intersection of
               ontological thinking, infrastructure systems, and immersive

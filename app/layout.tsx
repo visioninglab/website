@@ -17,8 +17,6 @@ const sourceSerif = Source_Serif_4({
   weight: ["400", "600", "700"],
 });
 
-const basePath = process.env.NODE_ENV === "production" ? "/website" : "";
-
 export const metadata: Metadata = {
   title: {
     default: "Visioning Lab",
@@ -27,7 +25,8 @@ export const metadata: Metadata = {
   description:
     "Research lab at the intersection of ontological thinking, infrastructure systems, and immersive technology.",
   icons: {
-    icon: `${basePath}/favicon.ico`,
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Visioning Lab",

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import ContactForm from "./ContactForm";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
@@ -25,15 +24,15 @@ export default function CollaboratePage() {
         </p>
       </FadeIn>
 
-      <div className="mt-12 grid gap-12 md:grid-cols-2">
+      <div className="mt-12 max-w-2xl">
         <FadeIn delay={0.1}>
           <div>
             <h2 className="font-[family-name:var(--font-source-serif)] text-xl font-semibold">
-              What We Work On
+              What we work on
             </h2>
             <div className="mt-6 space-y-6">
               <div>
-                <h3 className="text-sm font-medium">Research Partnerships</h3>
+                <h3 className="text-sm font-medium">Research partnerships</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
                   Collaborative research across ontology, infrastructure, and
                   immersive technology.
@@ -64,7 +63,7 @@ export default function CollaboratePage() {
 
             <div className="mt-10 border-t border-border pt-6">
               <p className="text-sm text-muted-foreground">
-                Or email directly:{" "}
+                Email:{" "}
                 <a
                   href="mailto:hello@visioninglab.com"
                   className="text-primary underline underline-offset-2"
@@ -74,10 +73,6 @@ export default function CollaboratePage() {
               </p>
             </div>
           </div>
-        </FadeIn>
-
-        <FadeIn delay={0.2}>
-          <ContactForm />
         </FadeIn>
       </div>
     </div>

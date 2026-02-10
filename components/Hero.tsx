@@ -46,10 +46,7 @@ export default function Hero({ latestEssaySlug }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             <h1 className="font-[family-name:var(--font-source-serif)] text-4xl font-bold leading-[1.05] sm:text-5xl md:text-7xl">
-              Co-developing <span className="text-gradient">research</span> for
-              complex systems — across{" "}
-              <span className="text-gradient">infrastructure</span>, policy and{" "}
-              <span className="text-gradient">emerging technology</span>
+              Let&apos;s make things <span className="text-gradient">better</span>
             </h1>
           </motion.div>
 
@@ -60,7 +57,7 @@ export default function Hero({ latestEssaySlug }: HeroProps) {
           >
             <EditableText
               contentKey="hero.description"
-              defaultValue="We work at the intersection of ontological thinking, infrastructure systems, and immersive technology — bringing rigour to complexity and clarity to decisions that shape the built environment."
+              defaultValue="With so much power at our fingertips, let's focus on what matters"
               as="p"
               multiline
               className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl"

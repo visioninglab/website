@@ -2,6 +2,9 @@
 
 import { useState, type FormEvent } from "react";
 
+// Replace with your Formspree form ID from https://formspree.io
+const FORMSPREE_ID = "xjgeggga";
+
 const categories = [
   "Research",
   "Speaking",
@@ -12,11 +15,33 @@ const categories = [
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: Wire up to Formspree or Resend serverless function
-    setSubmitted(true);
+    setSending(true);
+    setError(false);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -90,11 +115,18 @@ export default function ContactForm() {
         />
       </div>
 
+      {error && (
+        <p className="text-sm text-red-600">
+          Something went wrong. Please try again or email hello@visioninglab.com directly.
+        </p>
+      )}
+
       <button
         type="submit"
-        className="inline-flex items-center rounded-lg bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        disabled={sending}
+        className="inline-flex items-center rounded-lg bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50"
       >
-        Send message
+        {sending ? "Sending..." : "Send message"}
       </button>
     </form>
   );
