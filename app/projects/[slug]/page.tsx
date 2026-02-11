@@ -49,7 +49,7 @@ export default async function ProjectPage({ params }: PageProps) {
         href="/projects"
         className="text-sm text-muted-foreground transition-colors hover:text-foreground"
       >
-        &larr; Back to Projects
+        &larr; Back to Making
       </Link>
 
       <header className="mt-10">

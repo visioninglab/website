@@ -35,7 +35,7 @@ export default function Footer() {
                   href="/projects"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  Projects
+                  Making
                 </Link>
                 <Link
                   href="/about"

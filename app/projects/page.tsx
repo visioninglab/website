@@ -16,7 +16,7 @@ export default function ProjectsPage() {
     <div className="mx-auto max-w-6xl px-6 pt-32 pb-16 md:pb-24">
       <FadeIn>
         <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-          Projects
+          Making
         </p>
         <h1 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-4xl">
           Research & <span className="text-gradient">Development</span>

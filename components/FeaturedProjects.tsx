@@ -17,7 +17,7 @@ export default function FeaturedProjects({
           <div className="mb-16 flex items-end justify-between">
             <div>
               <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-                Projects
+                Making
               </p>
               <h2 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold md:text-4xl">
                 Recent <span className="text-gradient">Work</span>
