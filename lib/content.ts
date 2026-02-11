@@ -97,7 +97,13 @@ export function getProjects(): Project[] {
     };
   });
 
-  return projects;
+  // Sort by year (most recent first)
+  // Extract start year from "2024–", "2017–2023", or "2020" format
+  return projects.sort((a, b) => {
+    const yearA = parseInt(a.frontmatter.year.split("–")[0]);
+    const yearB = parseInt(b.frontmatter.year.split("–")[0]);
+    return yearB - yearA;
+  });
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {
