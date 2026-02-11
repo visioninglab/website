@@ -14,14 +14,12 @@ export default function Hero({ latestEssaySlug }: HeroProps) {
       {/* Colourful gradient background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-lavender/5" />
-        {/* Teal orb — top right */}
-        <div className="absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-primary/20 blur-[120px]" />
+        {/* Teal orb — top right (reduced blur on mobile) */}
+        <div className="absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-primary/20 blur-[60px] md:blur-[120px]" />
         {/* Pink orb — centre left */}
-        <div className="absolute top-1/3 -left-24 h-[400px] w-[400px] rounded-full bg-accent/15 blur-[100px]" />
-        {/* Blue orb — bottom right */}
-        <div className="absolute bottom-24 right-1/4 h-[350px] w-[350px] rounded-full bg-glow/12 blur-[100px]" />
-        {/* Lavender orb — top left (subtle) */}
-        <div className="absolute top-20 left-1/4 h-[300px] w-[300px] rounded-full bg-lavender/15 blur-[80px]" />
+        <div className="absolute top-1/3 -left-24 h-[400px] w-[400px] rounded-full bg-accent/15 blur-[50px] md:blur-[100px]" />
+        {/* Blue orb — bottom right (hidden on mobile) */}
+        <div className="absolute bottom-24 right-1/4 hidden h-[350px] w-[350px] rounded-full bg-glow/12 blur-[100px] md:block" />
         {/* Fade to background at bottom */}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
       </div>
