@@ -115,28 +115,6 @@ export default function AboutPage() {
         </div>
       </FadeIn>
 
-      <FadeIn>
-        <div className="mt-20 flex items-center gap-8 rounded-xl border border-border bg-card p-6">
-          <div className="relative h-32 w-48 shrink-0 overflow-hidden rounded-lg md:h-40 md:w-60">
-            <Image
-              src={`${basePath}/images/collaboratorium.png`}
-              alt="Collaboratorium — a virtual environment for academic collaboration"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold tracking-tight">The Collaboratorium</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              A virtual space for collaborative research.
-            </p>
-            <p className="mt-2 text-xs text-muted-foreground">
-              Developed in collaboration with Joe Ravetz at the University of Manchester
-            </p>
-          </div>
-        </div>
-      </FadeIn>
-
       <FounderBio />
     </div>
   );
