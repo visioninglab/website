@@ -98,9 +98,9 @@ export default function Header() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden md:hidden"
+            className="overflow-hidden border-t border-border bg-background/95 backdrop-blur-xl md:hidden"
           >
-            <div className="flex flex-col gap-4 px-6 pb-6">
+            <div className="flex flex-col gap-4 px-6 py-6">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
