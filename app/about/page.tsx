@@ -103,6 +103,18 @@ export default function AboutPage() {
         </FadeIn>
       </div>
 
+      <FadeIn delay={0.3}>
+        <div className="mt-16">
+          <Image
+            src={`${basePath}/images/whoweworkwith.png`}
+            alt="Partnerships and Collaborations"
+            width={800}
+            height={400}
+            className="mx-auto w-full max-w-3xl rounded-xl border border-border bg-white p-8"
+          />
+        </div>
+      </FadeIn>
+
       <FadeIn>
         <div className="mt-20 flex items-center gap-8 rounded-xl border border-border bg-card p-6">
           <div className="relative h-32 w-48 shrink-0 overflow-hidden rounded-lg md:h-40 md:w-60">
