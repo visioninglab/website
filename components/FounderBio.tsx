@@ -60,7 +60,7 @@ export default function FounderBio() {
             multiline
             className="mt-4 leading-relaxed text-muted-foreground"
           />
-          <div className="mt-6 flex gap-4">
+          <div className="mt-6">
             <a
               href="https://www.linkedin.com/in/jessica-symons-63622229/"
               target="_blank"
@@ -68,12 +68,6 @@ export default function FounderBio() {
               className="rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground"
             >
               LinkedIn
-            </a>
-            <a
-              href="mailto:jessica@visioninglab.com"
-              className="rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              Email
             </a>
           </div>
         </FadeIn>
