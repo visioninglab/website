@@ -43,6 +43,8 @@ const sites = [
     url: "https://visioninglab.github.io/popupviewv6/",
     description:
       "PopupView is Visioning Lab's WebAR platform for phones and tablets. Point your camera at a trigger image or QR code to launch a 3D animation with sound — no app download required. Built for artists, architects, writers, and cultural organisations to commission AR experiences that appear from posters, books, and objects in public space.",
+    demoUrl: "https://visioninglab.github.io/popupviewv6/prototype/index.html",
+    demoLabel: "Try the Bugs in the Woods AR demo — point your phone camera at a trigger image to identify insects in augmented reality.",
   },
 ];
 
@@ -65,22 +67,38 @@ export default function SitesPage() {
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {sites.map((site, i) => (
           <FadeIn key={site.name} delay={i * 0.1}>
-            <a
-              href={site.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/40 hover:shadow-lg"
-            >
-              <h2 className="font-[family-name:var(--font-source-serif)] text-xl font-bold tracking-tight group-hover:text-primary">
-                {site.name}
-              </h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {site.description}
-              </p>
-              <p className="mt-4 text-xs text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                Visit site &rarr;
-              </p>
-            </a>
+            <div className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/40 hover:shadow-lg">
+              <a
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="font-[family-name:var(--font-source-serif)] text-xl font-bold tracking-tight group-hover:text-primary">
+                  {site.name}
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {site.description}
+                </p>
+                <p className="mt-4 text-xs text-primary">
+                  Visit site &rarr;
+                </p>
+              </a>
+              {"demoUrl" in site && site.demoUrl && (
+                <div className="mt-4 border-t border-border pt-4">
+                  <p className="text-sm text-muted-foreground">
+                    {"demoLabel" in site && site.demoLabel}
+                  </p>
+                  <a
+                    href={site.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-sm font-medium text-primary hover:underline"
+                  >
+                    Launch AR demo &rarr;
+                  </a>
+                </div>
+              )}
+            </div>
           </FadeIn>
         ))}
       </div>
