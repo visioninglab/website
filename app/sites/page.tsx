@@ -34,15 +34,15 @@ const sites = [
   },
   {
     name: "Feedback System",
-    url: "https://visioninglab.github.io/feedbacksystem/",
+    url: "https://visioninglab.github.io/feedbacksystem/demo/index.html",
     description:
       "Personalised Psychology Feedback Newsletter — interactive demo.",
   },
   {
-    name: "PopupView",
+    name: "PopupView WebAR",
     url: "https://visioninglab.github.io/popupviewv6/",
     description:
-      "PopupView — an interactive spatial viewing tool for heritage and place-based storytelling.",
+      "PopupView is Visioning Lab's WebAR platform for phones and tablets. Point your camera at a trigger image or QR code to launch a 3D animation with sound — no app download required. Built for artists, architects, writers, and cultural organisations to commission AR experiences that appear from posters, books, and objects in public space.",
   },
 ];
 
