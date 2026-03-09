@@ -40,10 +40,10 @@ const sites = [
   },
   {
     name: "PopupView WebAR",
-    url: "https://visioninglab.github.io/popupviewv6/",
+    url: "https://www.popupview.com",
     description:
       "PopupView is Visioning Lab's WebAR platform for phones and tablets. Point your camera at a trigger image or QR code to launch a 3D animation with sound — no app download required. Built for artists, architects, writers, and cultural organisations to commission AR experiences that appear from posters, books, and objects in public space.",
-    demoUrl: "https://visioninglab.github.io/popupviewv6/prototype/index.html",
+    demoUrl: "/demo/popupview",
     demoLabel: "Try the Bugs in the Woods AR demo — point your phone camera at a trigger image to identify insects in augmented reality.",
   },
 ];
