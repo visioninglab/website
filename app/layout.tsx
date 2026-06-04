@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Source_Serif_4 } from "next/font/google";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import "./globals.css";
+
+const GA4_MEASUREMENT_ID = "G-ZWZML12R4X";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +56,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${sourceSerif.variable} bg-background text-foreground antialiased`}
       >
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA4_MEASUREMENT_ID}');
+          `}
+        </Script>
         <Providers>
           <div className="flex min-h-screen flex-col">
             <Header />
