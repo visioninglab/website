@@ -79,7 +79,7 @@ export default function CollaboratePage() {
                   rel="noopener noreferrer"
                   className="text-primary underline underline-offset-2"
                 >
-                  Jessica Symons
+                  Dr Jessica Symons
                 </a>
               </p>
             </div>
