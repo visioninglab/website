@@ -71,6 +71,17 @@ export default function CollaboratePage() {
                   hello@visioninglab.com
                 </a>
               </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                LinkedIn:{" "}
+                <a
+                  href="https://www.linkedin.com/in/jessica-symons-63622229/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-2"
+                >
+                  Jessica Symons
+                </a>
+              </p>
             </div>
           </div>
         </FadeIn>
