@@ -172,3 +172,29 @@ body {
   color: var(--muted-foreground);
   text-align: center;
 }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-size: 0.95rem;
+}
+
+.prose thead th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--foreground);
+  border-bottom: 2px solid var(--border);
+  padding: 0.6rem 0.75rem;
+}
+
+.prose tbody td {
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
