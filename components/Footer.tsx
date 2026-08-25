@@ -38,6 +38,12 @@ export default function Footer() {
                   Making
                 </Link>
                 <Link
+                  href="/press"
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  Press
+                </Link>
+                <Link
                   href="/about"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
