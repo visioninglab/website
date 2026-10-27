@@ -40,8 +40,9 @@ export default function FaithConundrumSourcesPage() {
             <p key={p}>{withBookTitle(p)}</p>
           ))}
           <p className="text-sm text-muted-foreground">
-            Links to recordings and online documents have been added for this
-            website. The printed book gives names only.
+            Links have been added for this website and are not part of the
+            printed book. Book links go to the publisher where available, or
+            otherwise to the book&rsquo;s record in Open Library.
           </p>
         </div>
       </header>
@@ -129,13 +130,18 @@ function ThemeBlock({ block }: { block: Block }) {
   }
 
   if ("watch" in block) {
-    const { name, description, recordings } = block.watch;
+    const { name, url, site, description, recordings } = block.watch;
     return (
       <div>
         <BlockLabel>Watch</BlockLabel>
         <p className="leading-relaxed">
-          <strong className="font-semibold">{name}</strong> &mdash;{" "}
-          {description}
+          <strong className="font-semibold">
+            {url ? <ExternalLink href={url}>{name}</ExternalLink> : name}
+          </strong>
+          {site && (
+            <span className="text-sm text-muted-foreground"> ({site})</span>
+          )}{" "}
+          &mdash; {description}
         </p>
         {recordings && (
           <div className="mt-3 border-l-2 border-primary/30 pl-4 text-sm">
