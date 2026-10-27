@@ -41,8 +41,8 @@ export default function FaithConundrumSourcesPage() {
           ))}
           <p className="text-sm text-muted-foreground">
             Links have been added for this website and are not part of the
-            printed book. Book links go to the publisher&rsquo;s page or, where
-            there is none, to the author&rsquo;s own page for the book.
+            printed book. Book links go to the publisher&rsquo;s page where
+            available, otherwise to the author&rsquo;s own page or to Amazon UK.
           </p>
         </div>
       </header>
