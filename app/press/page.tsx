@@ -91,7 +91,15 @@ export default function PressPage() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                {/* TODO: add the verified Amazon listing link here. */}
+                <a
+                  href="https://www.amazon.co.uk/Faith-Conundrum-meaning-becomes-opportunity-ebook/dp/B0HMNZM327"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  Kindle edition on Amazon
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </a>
                 <Link
                   href="/press/the-faith-conundrum/sources"
                   className="inline-block rounded-lg border border-primary/40 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
