@@ -8,6 +8,9 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const amazonUrl =
   "https://www.amazon.co.uk/Faith-Conundrum-meaning-becomes-opportunity-ebook/dp/B0HMNZM327";
 const coverPath = "/images/The_Faith_Conundrum_Kindle_Cover.jpg";
+const loveCoverPath = "/images/Manifesto_for_Love_Cover.jpg";
+const lovePdfPath = "/docs/Manifesto_for_Love.pdf";
+const loveProjectUrl = "https://visioninglab.github.io/lovemanifesto/";
 
 export const metadata: Metadata = {
   title: "Press",
@@ -17,28 +20,47 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Visioning Press",
     description:
-      "The Faith Conundrum: How the human search for meaning becomes an opportunity for control, by Dr Jessica Symons.",
+      "The Faith Conundrum by Dr Jessica Symons, and Manifesto for Love, a free collection of 28 love poems from 28 countries.",
     url: "/press/",
     images: [{ url: coverPath, width: 1000, height: 1600 }],
   },
 };
 
-const bookJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Book",
-  name: "The Faith Conundrum",
-  alternativeHeadline:
-    "How the human search for meaning becomes an opportunity for control",
-  author: { "@type": "Person", name: "Jessica Symons" },
-  publisher: { "@type": "Organization", name: "Visioning Press" },
-  image: `https://visioninglab.com${coverPath}`,
-  url: "https://visioninglab.com/press/",
-  workExample: {
+const bookJsonLd = [
+  {
+    "@context": "https://schema.org",
     "@type": "Book",
-    bookFormat: "https://schema.org/EBook",
-    url: amazonUrl,
+    name: "The Faith Conundrum",
+    alternativeHeadline:
+      "How the human search for meaning becomes an opportunity for control",
+    author: { "@type": "Person", name: "Jessica Symons" },
+    publisher: { "@type": "Organization", name: "Visioning Press" },
+    image: `https://visioninglab.com${coverPath}`,
+    url: "https://visioninglab.com/press/",
+    workExample: {
+      "@type": "Book",
+      bookFormat: "https://schema.org/EBook",
+      url: amazonUrl,
+    },
   },
-};
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: "Manifesto for Love",
+    alternativeHeadline: "28 poems / 28 countries / six continents",
+    genre: "Poetry",
+    editor: { "@type": "Person", name: "Jessica Symons" },
+    publisher: { "@type": "Organization", name: "Visioning Press" },
+    image: `https://visioninglab.com${loveCoverPath}`,
+    url: "https://visioninglab.com/press/",
+    isAccessibleForFree: true,
+    workExample: {
+      "@type": "Book",
+      bookFormat: "https://schema.org/EBook",
+      url: `https://visioninglab.com${lovePdfPath}`,
+    },
+  },
+];
 
 export default function PressPage() {
   return (
@@ -77,80 +99,124 @@ export default function PressPage() {
 
       <FadeIn delay={0.2}>
         <div className="mt-16">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
+          <p className="border-b border-border pb-3 text-sm font-medium uppercase tracking-widest text-primary">
             Now published
           </p>
 
-          <div className="grid gap-10 rounded-xl border border-border bg-card p-8 md:grid-cols-[minmax(0,260px)_1fr] md:p-10">
-            <Image
-              src={`${basePath}${coverPath}`}
-              alt="Cover of The Faith Conundrum by Dr Jessica Symons"
-              width={1000}
-              height={1600}
-              className="mx-auto h-auto w-full max-w-[260px] rounded-md shadow-md"
-            />
-            <div>
-              <h2 className="font-[family-name:var(--font-source-serif)] text-2xl font-bold italic tracking-tight md:text-3xl">
+          <div className="mt-8 grid gap-12 md:grid-cols-2">
+            <article className="flex flex-col">
+              <div className="flex justify-center rounded-md bg-muted px-8 py-10">
+                <Image
+                  src={`${basePath}${coverPath}`}
+                  alt="Cover of The Faith Conundrum by Dr Jessica Symons"
+                  width={1000}
+                  height={1600}
+                  className="h-auto w-full max-w-[220px] rounded-sm shadow-md"
+                />
+              </div>
+              <p className="mt-6 text-xs font-medium uppercase tracking-widest text-primary">
+                Non-fiction
+              </p>
+              <h2 className="mt-2 font-[family-name:var(--font-source-serif)] text-2xl font-bold tracking-tight md:text-3xl">
                 The Faith Conundrum
               </h2>
-              <p className="mt-2 font-[family-name:var(--font-source-serif)] text-lg text-foreground">
+              <p className="mt-2 font-[family-name:var(--font-source-serif)] text-lg italic text-foreground">
                 How the human search for meaning becomes an opportunity for
                 control
               </p>
-              <p className="mt-3 font-medium text-muted-foreground">
+              <p className="mt-2 text-sm text-muted-foreground">
                 Dr Jessica Symons
               </p>
-
-              <div className="prose mt-8 max-w-3xl">
-                <p>
-                  Our first book explores faith as one of humanity&rsquo;s most
-                  enduring technologies: a way of organising knowledge, values,
-                  relationships and collective life.
-                </p>
-                <p>
-                  Drawing on anthropology, history and contemporary society,{" "}
-                  <em>The Faith Conundrum</em> follows the development of
-                  religious traditions through the ages and asks what happens when
-                  we look at religion not simply in terms of what people believe,
-                  but in terms of{" "}
-                  <strong>what faith enables societies to do</strong>.
-                </p>
-                <p>
-                  Written by Visioning Lab founder and anthropologist{" "}
-                  <strong>Dr Jessica Symons</strong>,{" "}
-                  <em>The Faith Conundrum</em> is published by Visioning Press
-                  and available from Amazon.
-                </p>
-              </div>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href={amazonUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-                >
-                  Kindle edition on Amazon
-                  <span className="sr-only"> (opens in a new tab)</span>
-                </a>
-                <Link
-                  href="/press/the-faith-conundrum/sources"
-                  className="inline-block rounded-lg border border-primary/40 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
-                >
-                  Further reading, watching and sources
-                </Link>
-              </div>
-
-              <p className="mt-6 text-sm text-muted-foreground">
-                <a
-                  href={`${basePath}/docs/The_Faith_Conundrum_poster_A4.pdf`}
-                  className="text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary"
-                >
-                  Printable poster
-                </a>{" "}
-                (PDF, A4)
+              <p className="mt-4 text-muted-foreground">
+                An exploration of faith, meaning and power, drawing on
+                anthropology, history and contemporary society.
               </p>
-            </div>
+
+              <div className="mt-auto pt-8">
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={amazonUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                  >
+                    Kindle edition on Amazon
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                  <Link
+                    href="/press/the-faith-conundrum/sources"
+                    className="inline-block rounded-lg border border-primary/40 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+                  >
+                    Further reading
+                  </Link>
+                </div>
+                <p className="mt-4 text-sm text-muted-foreground">
+                  <a
+                    href={`${basePath}/docs/The_Faith_Conundrum_poster_A4.pdf`}
+                    className="text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary"
+                  >
+                    Printable poster
+                  </a>{" "}
+                  (PDF, A4)
+                </p>
+              </div>
+            </article>
+
+            <article className="flex flex-col">
+              <div className="flex justify-center rounded-md bg-muted px-8 py-10">
+                <Image
+                  src={`${basePath}${loveCoverPath}`}
+                  alt="Cover of Manifesto for Love: 28 poems from 28 countries"
+                  width={992}
+                  height={1586}
+                  className="h-auto w-full max-w-[220px] rounded-sm shadow-md"
+                />
+              </div>
+              <p className="mt-6 text-xs font-medium uppercase tracking-widest text-primary">
+                Poetry &middot; Free collection
+              </p>
+              <h2 className="mt-2 font-[family-name:var(--font-source-serif)] text-2xl font-bold tracking-tight md:text-3xl">
+                Manifesto for Love
+              </h2>
+              <p className="mt-2 font-[family-name:var(--font-source-serif)] text-lg italic text-foreground">
+                28 poems / 28 countries / six continents
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Edited by Dr Jessica Symons &middot; A Visioning Lab project
+              </p>
+              <p className="mt-4 text-muted-foreground">
+                Love poems from 28 countries across six continents, from Sappho
+                to C&eacute;sar Vallejo, each in its original language beside
+                an English translation, with a short note on its history. Part
+                of a project gathering poems, songs and stories from all of the
+                world&rsquo;s 195 countries.
+              </p>
+
+              <div className="mt-auto pt-8">
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={`${basePath}${lovePdfPath}`}
+                    download
+                    className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                  >
+                    Download the free collection
+                  </a>
+                  <a
+                    href={loveProjectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-lg border border-primary/40 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+                  >
+                    Explore the project
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                </div>
+                <p className="mt-4 text-sm text-muted-foreground">
+                  PDF &middot; A4 &middot; 6&nbsp;MB &middot; Designed for home
+                  printing
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </FadeIn>
