@@ -84,6 +84,13 @@ const groups: { title: string; blurb: string; demos: Demo[] }[] = [
         description:
           "Exploring AI applications in legal research and practice, and where the sector's judgement still has to sit.",
       },
+      {
+        name: "Love Manifesto",
+        url: "https://visioninglab.github.io/lovemanifesto/",
+        repo: "lovemanifesto",
+        description:
+          "A love poem, song or story from every country in the world — mapped, with poems to read in their original language beside English.",
+      },
     ],
   },
   {
