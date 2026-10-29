@@ -23,6 +23,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://visioninglab.com"),
   title: {
     default: "Visioning Lab",
     template: "%s — Visioning Lab",

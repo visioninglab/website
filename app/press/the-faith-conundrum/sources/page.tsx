@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: "The Faith Conundrum: Further Reading, Watching and Sources",
   description:
     "Further reading, watching and sources for The Faith Conundrum by Dr Jessica Symons.",
+  alternates: { canonical: "/press/the-faith-conundrum/sources/" },
+  openGraph: {
+    title: "The Faith Conundrum: Further Reading, Watching and Sources",
+    description:
+      "Further reading, watching and sources for The Faith Conundrum by Dr Jessica Symons.",
+    url: "/press/the-faith-conundrum/sources/",
+    images: [
+      {
+        url: "/images/The_Faith_Conundrum_Kindle_Cover.jpg",
+        width: 1000,
+        height: 1600,
+      },
+    ],
+  },
 };
 
 const linkClass =
@@ -48,8 +62,9 @@ export default function FaithConundrumSourcesPage() {
       </header>
 
       <nav
+        id="contents-nav"
         aria-labelledby="contents"
-        className="mt-12 max-w-3xl rounded-xl border border-border bg-card p-6 md:p-8"
+        className="mt-12 max-w-3xl scroll-mt-24 rounded-xl border border-border bg-card p-6 md:p-8"
       >
         <h2
           id="contents"
@@ -102,6 +117,7 @@ export default function FaithConundrumSourcesPage() {
                   <ThemeBlock key={i} block={block} />
                 ))}
               </div>
+              <BackToContents />
             </section>
           </div>
         ))}
@@ -118,6 +134,7 @@ export default function FaithConundrumSourcesPage() {
               <p key={p}>{p}</p>
             ))}
           </div>
+          <BackToContents />
         </section>
       </div>
     </article>
@@ -178,6 +195,19 @@ function ThemeBlock({ block }: { block: Block }) {
             ))}
       </ul>
     </div>
+  );
+}
+
+function BackToContents() {
+  return (
+    <p className="mt-6 text-sm">
+      <a
+        href="#contents-nav"
+        className="text-muted-foreground transition-colors hover:text-primary"
+      >
+        &uarr; Back to contents
+      </a>
+    </p>
   );
 }
 

@@ -6,6 +6,7 @@ import LatestEssayFeature from "@/components/LatestEssayFeature";
 import EssayGrid from "@/components/EssayGrid";
 import CollaborateCTA from "@/components/CollaborateCTA";
 import AboutSnippet from "@/components/AboutSnippet";
+import BookFeature from "@/components/BookFeature";
 
 export default function Home() {
   const essays = getEssays();
@@ -26,6 +27,8 @@ export default function Home() {
       {latestEssay && <LatestEssayFeature essay={latestEssay} />}
 
       {selectedEssays.length > 0 && <EssayGrid essays={selectedEssays} />}
+
+      <BookFeature />
 
       <AboutSnippet />
 

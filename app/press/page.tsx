@@ -5,15 +5,48 @@ import FadeIn from "@/components/FadeIn";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
+const amazonUrl =
+  "https://www.amazon.co.uk/Faith-Conundrum-meaning-becomes-opportunity-ebook/dp/B0HMNZM327";
+const coverPath = "/images/The_Faith_Conundrum_Kindle_Cover.jpg";
+
 export const metadata: Metadata = {
   title: "Press",
   description:
     "Visioning Press works with writers and thinkers who have new ideas to share and something distinctive to say about the world.",
+  alternates: { canonical: "/press/" },
+  openGraph: {
+    title: "Visioning Press",
+    description:
+      "The Faith Conundrum: How the human search for meaning becomes an opportunity for control, by Dr Jessica Symons.",
+    url: "/press/",
+    images: [{ url: coverPath, width: 1000, height: 1600 }],
+  },
+};
+
+const bookJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Book",
+  name: "The Faith Conundrum",
+  alternativeHeadline:
+    "How the human search for meaning becomes an opportunity for control",
+  author: { "@type": "Person", name: "Jessica Symons" },
+  publisher: { "@type": "Organization", name: "Visioning Press" },
+  image: `https://visioninglab.com${coverPath}`,
+  url: "https://visioninglab.com/press/",
+  workExample: {
+    "@type": "Book",
+    bookFormat: "https://schema.org/EBook",
+    url: amazonUrl,
+  },
 };
 
 export default function PressPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 pt-32 pb-16 md:pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd) }}
+      />
       <FadeIn>
         <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
           Press
@@ -50,7 +83,7 @@ export default function PressPage() {
 
           <div className="grid gap-10 rounded-xl border border-border bg-card p-8 md:grid-cols-[minmax(0,260px)_1fr] md:p-10">
             <Image
-              src={`${basePath}/images/The_Faith_Conundrum_Kindle_Cover.jpg`}
+              src={`${basePath}${coverPath}`}
               alt="Cover of The Faith Conundrum by Dr Jessica Symons"
               width={1000}
               height={1600}
@@ -92,7 +125,7 @@ export default function PressPage() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="https://www.amazon.co.uk/Faith-Conundrum-meaning-becomes-opportunity-ebook/dp/B0HMNZM327"
+                  href={amazonUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
