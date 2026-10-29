@@ -140,6 +140,16 @@ export default function PressPage() {
                   Further reading, watching and sources
                 </Link>
               </div>
+
+              <p className="mt-6 text-sm text-muted-foreground">
+                <a
+                  href={`${basePath}/docs/The_Faith_Conundrum_poster_A4.pdf`}
+                  className="text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary"
+                >
+                  Printable poster
+                </a>{" "}
+                (PDF, A4)
+              </p>
             </div>
           </div>
         </div>
