@@ -9,7 +9,6 @@ const amazonUrl =
   "https://www.amazon.co.uk/Faith-Conundrum-meaning-becomes-opportunity-ebook/dp/B0HMNZM327";
 const coverPath = "/images/The_Faith_Conundrum_Kindle_Cover.jpg";
 const loveCoverPath = "/images/Manifesto_for_Love_Cover.jpg";
-const loveProjectUrl = "https://visioninglab.github.io/lovemanifesto/";
 
 export const metadata: Metadata = {
   title: "Press",
@@ -175,31 +174,19 @@ export default function PressPage() {
                 28 poems / 28 countries / six continents
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                Edited by Dr Jessica Symons &middot; A Visioning Lab project
+                Edited by Dr Jessica Symons
               </p>
               <p className="mt-4 text-muted-foreground">
-                Love poems from 28 countries across six continents, from Sappho
-                to C&eacute;sar Vallejo, each in its original language beside
-                an English translation, with a short note on its history. Part
-                of a project gathering poems, songs and stories from all of the
-                world&rsquo;s 195 countries.
+                A book of love poems from 28 countries across six continents,
+                from Sappho to C&eacute;sar Vallejo, each in its original
+                language beside an English translation, with a short note on its
+                history.
               </p>
 
               <div className="mt-auto pt-8">
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href={loveProjectUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-                  >
-                    Explore the project
-                    <span className="sr-only"> (opens in a new tab)</span>
-                  </a>
-                </div>
-                <p className="mt-4 text-sm text-muted-foreground">
-                  A revised printable edition is in preparation.
-                </p>
+                <span className="inline-block rounded-lg border border-primary/40 px-4 py-2 text-sm font-medium text-primary">
+                  Coming soon
+                </span>
               </div>
             </article>
           </div>
