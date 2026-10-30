@@ -166,7 +166,7 @@ export default function PressPage() {
                 />
               </div>
               <p className="mt-6 text-xs font-medium uppercase tracking-widest text-primary">
-                Poetry &middot; Free collection
+                Poetry
               </p>
               <h2 className="mt-2 font-[family-name:var(--font-source-serif)] text-2xl font-bold tracking-tight md:text-3xl">
                 Manifesto for Love
