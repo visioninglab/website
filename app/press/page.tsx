@@ -9,7 +9,6 @@ const amazonUrl =
   "https://www.amazon.co.uk/Faith-Conundrum-meaning-becomes-opportunity-ebook/dp/B0HMNZM327";
 const coverPath = "/images/The_Faith_Conundrum_Kindle_Cover.jpg";
 const loveCoverPath = "/images/Manifesto_for_Love_Cover.jpg";
-const lovePdfPath = "/docs/Manifesto_for_Love.pdf";
 const loveProjectUrl = "https://visioninglab.github.io/lovemanifesto/";
 
 export const metadata: Metadata = {
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Visioning Press",
     description:
-      "The Faith Conundrum by Dr Jessica Symons, and Manifesto for Love, a free collection of 28 love poems from 28 countries.",
+      "The Faith Conundrum by Dr Jessica Symons, and Manifesto for Love, a collection of 28 love poems from 28 countries.",
     url: "/press/",
     images: [{ url: coverPath, width: 1000, height: 1600 }],
   },
@@ -53,12 +52,6 @@ const bookJsonLd = [
     publisher: { "@type": "Organization", name: "Visioning Press" },
     image: `https://visioninglab.com${loveCoverPath}`,
     url: "https://visioninglab.com/press/",
-    isAccessibleForFree: true,
-    workExample: {
-      "@type": "Book",
-      bookFormat: "https://schema.org/EBook",
-      url: `https://visioninglab.com${lovePdfPath}`,
-    },
   },
 ];
 
@@ -195,25 +188,17 @@ export default function PressPage() {
               <div className="mt-auto pt-8">
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href={`${basePath}${lovePdfPath}`}
-                    download
-                    className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-                  >
-                    Download the free collection
-                  </a>
-                  <a
                     href={loveProjectUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block rounded-lg border border-primary/40 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+                    className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
                   >
                     Explore the project
                     <span className="sr-only"> (opens in a new tab)</span>
                   </a>
                 </div>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  PDF &middot; A4 &middot; 6&nbsp;MB &middot; Designed for home
-                  printing
+                  A revised printable edition is in preparation.
                 </p>
               </div>
             </article>
