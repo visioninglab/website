@@ -12,12 +12,12 @@ const ringPath = "/images/love-manifesto-ring.jpg";
 export const metadata: Metadata = {
   title: "On Love",
   description:
-    "Love Manifesto: a love poem, song or story from every country in the world, in the language it was written in and in English.",
+    "What if we take love seriously? Visioning Lab's research into love, starting with Love Manifesto: a love poem, song or story from every country in the world.",
   alternates: { canonical: "/on-love/" },
   openGraph: {
-    title: "On Love — Love Manifesto",
+    title: "On Love",
     description:
-      "A love poem, song or story from every country in the world, in the language it was written in and in English.",
+      "What if we take love seriously? Visioning Lab's research into love, starting with Love Manifesto: a love poem, song or story from every country in the world.",
     url: "/on-love/",
     images: [{ url: ringPath, width: 480, height: 480 }],
   },
@@ -46,15 +46,67 @@ export default function OnLovePage() {
           On Love
         </p>
         <h1 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-5xl">
-          Love <span className="text-gradient">Manifesto</span>
+          On <span className="text-gradient">Love</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-lg font-medium text-foreground">
-          Love in every country
-        </p>
+        <div className="prose mt-8 max-w-3xl">
+          <p>
+            Research into love started as a side interest for Visioning Lab,
+            explored in between more &lsquo;serious&rsquo; topics such as{" "}
+            <Link href="/thinking/why-ontologies-matter">ontologies</Link> or{" "}
+            <Link href="/projects/metaverse-standards">
+              metaverse standardisation
+            </Link>
+            . Gradually it has moved to centre stage. Why? Because it turns out
+            that love really does make the world go round.
+          </p>
+          <p>
+            We are moving into a world where everything is possible (through
+            AI), and where we have the luxury of deciding exactly what we want
+            and making it happen. A society supported by AI and drones was
+            imagined by Iain M. Banks in his{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Culture_series"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Culture novels
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>{" "}
+            back in the 80s. No-one has to work, so they spend their time
+            playing games and making love.
+          </p>
+          <p>
+            Yet there are still many very serious challenges that need to be
+            tackled before we get to utopia, such as inequality, environmental
+            degradation, war and violence. But here is where Visioning Lab has
+            taken an interest. What if we take love seriously? What if we
+            situate all decision making about how to prioritise economic,
+            environmental and social issues through the filter of love? What
+            tools and processes are needed to support that, and where does an
+            AI framework fit in?
+          </p>
+          <p>
+            These are the questions that we are now wrestling with, and it
+            starts with{" "}
+            <a href={siteUrl} target="_blank" rel="noopener noreferrer">
+              poetry from around the world
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
+            . The next step is a Love Manifesto that could be used to guide the
+            design and output of AI systems as well as humans.
+          </p>
+          <p>Watch this space.</p>
+        </div>
       </FadeIn>
 
       <FadeIn delay={0.1}>
-        <div className="mt-12 grid items-center gap-12 md:grid-cols-[minmax(0,320px)_1fr]">
+        <h2 className="mt-20 font-[family-name:var(--font-source-serif)] text-2xl font-bold tracking-tight md:text-3xl">
+          Love <span className="text-gradient">Manifesto</span>
+        </h2>
+        <p className="mt-3 text-lg font-medium text-foreground">
+          Love in every country
+        </p>
+        <div className="mt-10 grid items-center gap-12 md:grid-cols-[minmax(0,320px)_1fr]">
           <Image
             src={`${basePath}${ringPath}`}
             alt="The Love Manifesto emblem: ribbons of watercolour forming a ring"
@@ -107,9 +159,9 @@ export default function OnLovePage() {
               key={f.heading}
               className="rounded-xl border border-border bg-card p-6"
             >
-              <h2 className="font-[family-name:var(--font-source-serif)] text-lg font-bold tracking-tight">
+              <h3 className="font-[family-name:var(--font-source-serif)] text-lg font-bold tracking-tight">
                 {f.heading}
-              </h2>
+              </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {f.text}
               </p>
