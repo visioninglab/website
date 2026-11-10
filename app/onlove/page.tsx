@@ -7,18 +7,18 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const siteUrl = "https://visioninglab.github.io/lovemanifesto/";
 const mapUrl = "https://visioninglab.github.io/lovemanifesto/poems/map.html";
-const ringPath = "/images/love-manifesto-ring.jpg";
+const ringPath = "/images/lovemanifesto.jpg";
 
 export const metadata: Metadata = {
   title: "On Love",
   description:
     "What if we take love seriously? Visioning Lab's research into love, starting with Love Manifesto: a love poem, song or story from every country in the world.",
-  alternates: { canonical: "/on-love/" },
+  alternates: { canonical: "/onlove/" },
   openGraph: {
     title: "On Love",
     description:
       "What if we take love seriously? Visioning Lab's research into love, starting with Love Manifesto: a love poem, song or story from every country in the world.",
-    url: "/on-love/",
+    url: "/onlove/",
     images: [{ url: ringPath, width: 480, height: 480 }],
   },
 };

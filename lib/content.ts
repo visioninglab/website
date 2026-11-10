@@ -30,7 +30,7 @@ export interface ProjectFrontmatter {
   image?: string;
   external?: string;
   // A page elsewhere on this site that the card links to instead of
-  // /projects/<slug>, e.g. "/on-love".
+  // /projects/<slug>, e.g. "/onlove".
   link?: string;
   partners?: string[];
   role?: string;

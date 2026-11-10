@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/",
     "/press/",
     "/press/the-faith-conundrum/sources/",
-    "/on-love/",
+    "/onlove/",
     "/about/",
     "/collaborate/",
   ];
