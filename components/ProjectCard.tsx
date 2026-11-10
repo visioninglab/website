@@ -5,9 +5,10 @@ import type { Project } from "@/lib/content";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function ProjectCard({ project }: { project: Project }) {
-  const href = project.frontmatter.external
-    ? project.frontmatter.external
-    : `/projects/${project.slug}`;
+  const href =
+    project.frontmatter.external ??
+    project.frontmatter.link ??
+    `/projects/${project.slug}`;
 
   const isExternal = !!project.frontmatter.external;
   const role = project.frontmatter.role || "Co-development / R&D partner";

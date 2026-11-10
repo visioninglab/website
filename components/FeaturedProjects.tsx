@@ -34,9 +34,10 @@ export default function FeaturedProjects({
 
         <div className="space-y-6">
           {projects.map((project, i) => {
-            const href = project.frontmatter.external
-              ? project.frontmatter.external
-              : `/projects/${project.slug}`;
+            const href =
+              project.frontmatter.external ??
+              project.frontmatter.link ??
+              `/projects/${project.slug}`;
             const isExternal = !!project.frontmatter.external;
 
             return (

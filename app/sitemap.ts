@@ -12,12 +12,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/",
     "/press/",
     "/press/the-faith-conundrum/sources/",
+    "/on-love/",
     "/about/",
     "/collaborate/",
   ];
   const essays = getEssays().map((e) => `/thinking/${e.slug}/`);
   const projects = getProjects()
-    .filter((p) => !p.frontmatter.external)
+    .filter((p) => !p.frontmatter.external && !p.frontmatter.link)
     .map((p) => `/projects/${p.slug}/`);
 
   return [...pages, ...essays, ...projects].map((path) => ({

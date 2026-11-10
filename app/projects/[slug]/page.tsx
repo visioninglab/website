@@ -11,7 +11,7 @@ interface PageProps {
 export async function generateStaticParams() {
   const projects = getProjects();
   return projects
-    .filter((p) => !p.frontmatter.external)
+    .filter((p) => !p.frontmatter.external && !p.frontmatter.link)
     .map((project) => ({ slug: project.slug }));
 }
 

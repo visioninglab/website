@@ -29,6 +29,9 @@ export interface ProjectFrontmatter {
   featured: boolean;
   image?: string;
   external?: string;
+  // A page elsewhere on this site that the card links to instead of
+  // /projects/<slug>, e.g. "/on-love".
+  link?: string;
   partners?: string[];
   role?: string;
   outputs?: string[];
