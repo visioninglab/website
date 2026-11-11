@@ -51,7 +51,7 @@ export default function OnLovePage() {
         <div className="prose mt-8 max-w-3xl">
           <p>
             Research into love started as a side interest for Visioning Lab,
-            explored in between more &lsquo;serious&rsquo; topics such as{" "}
+            explored in-between more &lsquo;serious&rsquo; topics such as{" "}
             <Link href="/thinking/why-ontologies-matter">ontologies</Link> or{" "}
             <Link href="/projects/metaverse-standards">
               metaverse standardisation
@@ -60,33 +60,36 @@ export default function OnLovePage() {
             that love really does make the world go round.
           </p>
           <p>
-            We are moving into a world where everything is possible (through
-            AI), and where we have the luxury of deciding exactly what we want
-            and making it happen. A society supported by AI and drones was
-            imagined by Iain M. Banks in his{" "}
+            As societies develop the perception that everything is possible
+            (through AI) and that we have the luxury of deciding exactly what we
+            want and to make it happen, what&rsquo;s left to do? This thinking
+            is reminiscent of the{" "}
             <a
               href="https://en.wikipedia.org/wiki/Culture_series"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Culture novels
+              Culture world
               <span className="sr-only"> (opens in a new tab)</span>
             </a>{" "}
-            back in the 80s. No-one has to work, so they spend their time
-            playing games and making love.
+            imagined by Iain M. Banks back in the 80s. Supported by AIs and
+            drones, no-one has to work so they spend their time playing games
+            and making love.
           </p>
           <p>
-            Yet there are still many very serious challenges that need to be
-            tackled before we get to utopia, such as inequality, environmental
-            degradation, war and violence. But here is where Visioning Lab has
-            taken an interest. What if we take love seriously? What if we
-            situate all decision making about how to prioritise economic,
-            environmental and social issues through the filter of love? What
-            tools and processes are needed to support that, and where does an
-            AI framework fit in?
+            Before we get to utopia(?), there are still many very serious
+            challenges to be tackled such as inequality, environmental
+            degradation, war and violence. Here is where Visioning Lab has taken
+            an interest.
           </p>
           <p>
-            These are the questions that we are now wrestling with, and it
+            What if we take love seriously? What if we situate all decision
+            making about how to prioritise economic, environmental and social
+            issues through the filter of love? What tools and processes are
+            needed to support that and where does an AI framework fit in?
+          </p>
+          <p>
+            These are the questions that we are now wrestling with and it
             starts with{" "}
             <a href={siteUrl} target="_blank" rel="noopener noreferrer">
               poetry from around the world
