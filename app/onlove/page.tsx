@@ -23,6 +23,31 @@ export const metadata: Metadata = {
   },
 };
 
+const coverPath = "/images/Eight_Billion_Ways_to_Love_cover.jpg";
+
+const journalDocs = [
+  {
+    label: "The journal",
+    detail: "PDF, A5 pages, 1 MB",
+    file: "/docs/Eight_Billion_Ways_to_Love_draft_A5.pdf",
+  },
+  {
+    label: "The journal as spreads",
+    detail: "PDF, facing pages side by side as in print, 3.5 MB",
+    file: "/docs/Eight_Billion_Ways_to_Love_draft_A5_spreads.pdf",
+  },
+  {
+    label: "EPUB for Apple Books",
+    detail: "Fixed-layout EPUB for iPad, 7.8 MB",
+    file: "/docs/Eight_Billion_Ways_to_Love_draft.epub",
+  },
+  {
+    label: "Companion activities",
+    detail: "PDF, 23 further activities to print, 0.3 MB",
+    file: "/docs/Eight_Billion_Ways_to_Love_companion_activities_A5.pdf",
+  },
+];
+
 const features = [
   {
     heading: "One for every country",
@@ -174,6 +199,59 @@ export default function OnLovePage() {
       </FadeIn>
 
       <FadeIn delay={0.3}>
+        <h2 className="mt-20 font-[family-name:var(--font-source-serif)] text-2xl font-bold tracking-tight md:text-3xl">
+          Eight Billion <span className="text-gradient">Ways to Love</span>
+        </h2>
+        <p className="mt-3 text-lg font-medium text-foreground">
+          A journal in progress
+        </p>
+        <div className="mt-10 grid items-start gap-12 md:grid-cols-[minmax(0,280px)_1fr]">
+          <Image
+            src={`${basePath}${coverPath}`}
+            alt="Cover of Eight Billion Ways to Love: the title above ribbons of watercolour forming a ring"
+            width={640}
+            height={906}
+            className="mx-auto h-auto w-full max-w-[280px] rounded-lg shadow-sm"
+          />
+          <div className="max-w-2xl">
+            <div className="prose">
+              <p>
+                <em>Eight Billion Ways to Love</em> by Dr Jessica Symons is a
+                journal built around five questions: What is love? How do I
+                love? How do I want to be loved? What am I prepared to give?
+                And, at the end, my own manifesto for love.
+              </p>
+              <p>
+                Sixteen poems from the Love Manifesto collection, each in its
+                original language and in English, sit alongside activities
+                that start with images and ideas and move towards everyday
+                practice. Each section ends by gathering one line, and the
+                lines come together in a personal manifesto.
+              </p>
+              <p>
+                This is a working draft, shared for reading and comment.
+              </p>
+            </div>
+            <ul className="mt-8 space-y-3">
+              {journalDocs.map((d) => (
+                <li key={d.file}>
+                  <a
+                    href={`${basePath}${d.file}`}
+                    className="text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary"
+                  >
+                    {d.label}
+                  </a>
+                  <span className="ml-2 text-sm text-muted-foreground">
+                    {d.detail}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </FadeIn>
+
+      <FadeIn delay={0.4}>
         <div className="mt-16 max-w-3xl space-y-4 leading-relaxed text-foreground/90">
           <p>
             <em>Manifesto for Love</em>, a book of 28 love poems from 28
