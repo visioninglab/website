@@ -29,13 +29,6 @@ const groups: { title: string; blurb: string; demos: Demo[] }[] = [
           "Visioning Lab's systems development framework — Define, Structure, Insight, Action — as an interactive walkthrough.",
       },
       {
-        name: "Systems Thinking Competency Explorer",
-        url: "https://visioninglab.github.io/systemsthinking/",
-        repo: "systemsthinking",
-        description:
-          "An explorer for systems thinking competencies in the built environment, mapping skills against practice.",
-      },
-      {
         name: "Water Decisions",
         url: "https://visioninglab.github.io/waterdecisions/",
         repo: "waterdecisions",
