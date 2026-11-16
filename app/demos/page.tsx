@@ -22,13 +22,6 @@ const groups: { title: string; blurb: string; demos: Demo[] }[] = [
       "Working tools that turn a method into something you can click through.",
     demos: [
       {
-        name: "Systems Development Tool",
-        url: "https://visioninglab.github.io/systdev/",
-        repo: "systdev",
-        description:
-          "Visioning Lab's systems development framework — Define, Structure, Insight, Action — as an interactive walkthrough.",
-      },
-      {
         name: "Water Decisions",
         url: "https://visioninglab.github.io/waterdecisions/",
         repo: "waterdecisions",
