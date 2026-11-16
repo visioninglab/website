@@ -1,0 +1,1567 @@
+{
+ "activities": [
+  {
+   "slug": "loveineverydaylife",
+   "key": "everyday",
+   "title": "Love in Everyday Life",
+   "where": "Observation, with How do I love?",
+   "time": "10 minutes, then a few days of noticing",
+   "explore": "Care is practised long before romance and well beyond it: at the table, in a queue, with a neighbour’s cat. Everyday habits of patience and generosity may say as much about loving as any declaration.",
+   "drawsOn": "participant observation, the core method of anthropology",
+   "steps": [
+    "Over a few days, notice small moments of care, patience, irritation or warmth in ordinary places.",
+    "Record one moment for each setting: what happened, and what I did.",
+    "In the second column, note what feels expected in a romantic relationship in a similar situation. If romance isn’t part of life at the moment, imagine it, or leave the column blank."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "Food · What happened, what I did",
+     "sub": "cooking, sharing, the last biscuit",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Food · In romance, I expect",
+     "sub": "cooking, sharing, the last biscuit",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Groups · What happened, what I did",
+     "sub": "friends, teams, family gatherings",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Groups · In romance, I expect",
+     "sub": "friends, teams, family gatherings",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Animals · What happened, what I did",
+     "sub": "pets, wildlife, other people’s dogs",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Animals · In romance, I expect",
+     "sub": "pets, wildlife, other people’s dogs",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Neighbours · What happened, what I did",
+     "sub": "noise, parcels, favours",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Neighbours · In romance, I expect",
+     "sub": "noise, parcels, favours",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Colleagues · What happened, what I did",
+     "sub": "credit, help, deadlines",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Colleagues · In romance, I expect",
+     "sub": "credit, help, deadlines",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Shopkeepers and staff · What happened, what I did",
+     "sub": "queues, mistakes, thanks",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Shopkeepers and staff · In romance, I expect",
+     "sub": "queues, mistakes, thanks",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Strangers · What happened, what I did",
+     "sub": "directions, doors, delays",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Strangers · In romance, I expect",
+     "sub": "directions, doors, delays",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Somewhere else · What happened, what I did",
+     "sub": "a setting of my own",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Somewhere else · In romance, I expect",
+     "sub": "a setting of my own",
+     "rows": 2
+    }
+   ],
+   "prompts": [
+    "I am most patient with…",
+    "I expect more from a partner than from…",
+    "Is kindness sometimes easier with strangers than with people who are close?"
+   ],
+   "emerges": "Look across the settings. What patterns appear? Are there any surprises? Where are the differences, and what might explain them?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/everyday.pdf"
+  },
+  {
+   "slug": "lovedetective",
+   "key": "detective",
+   "title": "The Love Detective",
+   "where": "Observation extension, after Love in Everyday Life",
+   "time": "a few days of observation",
+   "explore": "Most affection is never announced. It hides in habits, favours and small attentions.",
+   "drawsOn": "participant observation and field notes from anthropology",
+   "steps": [
+    "Collect ten examples of affection that don’t involve saying ‘I love you’. They can come from friends, family, strangers, films or books."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "Case 1",
+     "sub": "Seen · where · what it might mean",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Case 2",
+     "sub": "Seen · where · what it might mean",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Case 3",
+     "sub": "Seen · where · what it might mean",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Case 4",
+     "sub": "Seen · where · what it might mean",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Case 5",
+     "sub": "Seen · where · what it might mean",
+     "rows": 3
+    }
+   ],
+   "prompts": [
+    "Which expressions were immediately recognisable? Which needed a second look?",
+    "Can love be recognised when it is expressed in unfamiliar ways?"
+   ],
+   "emerges": "Which kinds of affection appear most often? Which are rarely seen?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/detective.pdf"
+  },
+  {
+   "slug": "loveinterview",
+   "key": "interview",
+   "title": "The Love Interview",
+   "where": "Intergenerational extension, after A Love Timeline",
+   "time": "45 minutes, plus writing up",
+   "explore": "Each generation learns love differently. A conversation can show what has changed and what hasn’t.",
+   "drawsOn": "oral history and life-story interviewing",
+   "steps": [
+    "Ask someone from another generation, if they are happy to talk, about affection, courtship, relationships and commitment.",
+    "Let them choose what to share, and ask before quoting them anywhere.",
+    "Some questions to start with are below; follow wherever the conversation goes."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "How did people meet when you were my age?",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "What did courtship involve?",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "How was affection shown in your family?",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "What did commitment mean then?",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "What has changed the most?",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "What has stayed the same?",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "My notes",
+     "sub": "",
+     "rows": 10
+    }
+   ],
+   "prompts": [
+    "What surprised me was…",
+    "Which expectations have changed? Which remain familiar?"
+   ],
+   "emerges": "Which of their experiences would I want for myself, and which am I glad to have left behind?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/interview.pdf"
+  },
+  {
+   "slug": "unspokenrules",
+   "key": "rules",
+   "title": "The Unspoken Rules",
+   "where": "Origins of expectations",
+   "time": "15 minutes",
+   "explore": "Many expectations of love are never spoken, even privately. Writing them down can show where they came from.",
+   "drawsOn": "sentence completion, and the ‘rules for living’ of cognitive behavioural therapy (CBT)",
+   "steps": [
+    "Complete each sentence as honestly as possible."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "If someone loves me, they should…",
+     "sub": "",
+     "rows": 2
+    }
+   ],
+   "prompts": [
+    "Which of these would I defend? Which would I let go?"
+   ],
+   "emerges": "Which rules came from family, films, friends, faith or experience? Which have never been talked about with anyone?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/rules.pdf"
+  },
+  {
+   "slug": "uncomfortablechoices",
+   "key": "choices",
+   "title": "The Uncomfortable Choices",
+   "where": "Dilemmas extension, with the Fairness Experiment",
+   "time": "20 minutes",
+   "explore": "Values rarely conflict in theory. Dilemmas show which ones come first in practice.",
+   "drawsOn": "moral dilemma discussion, from philosophy and values education",
+   "steps": [
+    "Read each dilemma and note the choice I would make.",
+    "Then number them from easiest (1) to hardest (8)."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "A friend asks me to keep a secret that affects someone else I love.",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "A partner’s dream job would mean moving far from my family.",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "The truth about a gift would hurt someone who tried hard.",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "A friend is about to marry someone I don’t trust.",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "The evening alone I need means missing someone’s important night.",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "An old flame gets in touch, wanting to meet ‘just as friends’.",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Lending money to a sibling would put my own security at risk.",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Making peace means admitting I was partly wrong too.",
+     "sub": "",
+     "rows": 3
+    }
+   ],
+   "prompts": [
+    "I find it hardest to choose between… and…",
+    "Does the answer change when the person is a stranger rather than someone close?"
+   ],
+   "emerges": "Which value appears most often in my choices? Which is given up most readily?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/choices.pdf"
+  },
+  {
+   "slug": "relationshipcontract",
+   "key": "contract",
+   "title": "The Relationship Contract",
+   "where": "Negotiated agreements, for pairs",
+   "time": "25 minutes",
+   "explore": "Most relationships run on agreements that nobody wrote down.",
+   "drawsOn": "relationship agreements, used in couples counselling and mediation",
+   "steps": [
+    "Draft the agreement I would want, for a real or imagined relationship of any kind.",
+    "This is a reflective exercise, not a legal contract."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "Loyalty",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Freedom",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Money",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Intimacy",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Privacy",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Responsibilities",
+     "sub": "",
+     "rows": 3
+    },
+    {
+     "type": "text",
+     "label": "Something else",
+     "sub": "",
+     "rows": 3
+    }
+   ],
+   "prompts": [
+    "A clause I’d never thought to write down is…",
+    "Which expectations are negotiable?"
+   ],
+   "emerges": "Which clauses would be hardest to agree with someone else?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/contract.pdf"
+  },
+  {
+   "slug": "strangersstory",
+   "key": "story",
+   "title": "The Stranger’s Story",
+   "where": "Creative writing extension",
+   "time": "30 minutes",
+   "explore": "Invented stories reveal the assumptions of the people who write them.",
+   "drawsOn": "creative writing, and the attention to personal stories in narrative therapy",
+   "steps": [
+    "Write a short fictional story about two people falling in love and having their first disagreement."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "How they met",
+     "sub": "",
+     "rows": 7
+    },
+    {
+     "type": "text",
+     "label": "The first disagreement",
+     "sub": "",
+     "rows": 7
+    },
+    {
+     "type": "text",
+     "label": "What happened next",
+     "sub": "",
+     "rows": 7
+    }
+   ],
+   "prompts": [
+    "Who made the first move, and why that person?",
+    "How was the disagreement resolved, if it was?"
+   ],
+   "emerges": "Which parts of the story came from life, and which from films or books? What assumptions shaped it?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/story.pdf"
+  },
+  {
+   "slug": "perfectwelcome",
+   "key": "welcome",
+   "title": "The Perfect Welcome",
+   "where": "Comfort and recovery, with the Love Menu and Ordinary Tuesday",
+   "time": "10 minutes",
+   "explore": "After a difficult day, some responses comfort and others, however kind, miss the mark.",
+   "drawsOn": "guided imagery, used in coaching and therapy",
+   "steps": [
+    "Imagine coming home after a difficult day. Describe the welcome that would feel most comforting: words or silence, food, company or space."
+   ],
+   "fields": [
+    {
+     "type": "paper",
+     "label": "door"
+    },
+    {
+     "type": "text",
+     "label": "My notes",
+     "sub": "",
+     "rows": 9
+    }
+   ],
+   "prompts": [
+    "I would rather not be asked…",
+    "I would love someone to…"
+   ],
+   "emerges": "Is this welcome easy to ask for? Does it match the welcome I usually offer others?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/welcome.pdf"
+  },
+  {
+   "slug": "affectionmap",
+   "key": "affection",
+   "title": "The Affection Map",
+   "where": "Visual mapping extension",
+   "time": "20 minutes",
+   "explore": "Love lives in many rooms: conversation, practical care, physical affection, play, privacy and shared experiences.",
+   "drawsOn": "visual mapping and journalling",
+   "steps": [
+    "Furnish each room with examples from my own relationships, of any kind.",
+    "Shade the rooms that are used most often. Name the blank rooms if something is missing."
+   ],
+   "fields": [
+    {
+     "type": "paper",
+     "label": "house"
+    }
+   ],
+   "prompts": [
+    "I feel most at home in…",
+    "Which rooms are rarely used?"
+   ],
+   "emerges": "Are different relationships lived in different rooms?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/affection.pdf"
+  },
+  {
+   "slug": "freedomline",
+   "key": "freedom",
+   "title": "The Freedom Line",
+   "where": "Closeness and space extension, with the Boundary Garden",
+   "time": "10 minutes",
+   "explore": "Intimacy and independence can sit together, but the balance differs between people and over time.",
+   "drawsOn": "scaling questions, from solution-focused therapy",
+   "steps": [
+    "Mark a preferred position on each line, from complete togetherness to complete independence."
+   ],
+   "fields": [
+    {
+     "type": "scale",
+     "label": "Usually",
+     "left": "Togetherness",
+     "right": "Independence"
+    },
+    {
+     "type": "scale",
+     "label": "In a busy month",
+     "left": "Togetherness",
+     "right": "Independence"
+    },
+    {
+     "type": "scale",
+     "label": "On holiday",
+     "left": "Togetherness",
+     "right": "Independence"
+    },
+    {
+     "type": "scale",
+     "label": "When I’m ill",
+     "left": "Togetherness",
+     "right": "Independence"
+    },
+    {
+     "type": "scale",
+     "label": "Early in a relationship",
+     "left": "Togetherness",
+     "right": "Independence"
+    },
+    {
+     "type": "scale",
+     "label": "Many years in",
+     "left": "Togetherness",
+     "right": "Independence"
+    }
+   ],
+   "prompts": [
+    "I need more space when…",
+    "I want more closeness when…"
+   ],
+   "emerges": "How far do the marks spread? What moves them?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/freedom.pdf"
+  },
+  {
+   "slug": "jealousythermometer",
+   "key": "jealousy",
+   "title": "The Jealousy Thermometer",
+   "where": "Closeness and trust extension",
+   "time": "15 minutes",
+   "explore": "Situations that leave one person untroubled can unsettle another.",
+   "drawsOn": "feelings thermometers and rating scales, used in CBT",
+   "steps": [
+    "Give each situation a reading from 0 (untroubled) to 10 (very unsettled). Where there is no partner, imagine one, or think of a close friend."
+   ],
+   "fields": [
+    {
+     "type": "number",
+     "label": "A partner laughs a lot with someone at a party",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A best friend finds a new best friend",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A partner keeps their phone locked",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A partner goes on holiday with friends, without me",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A partner stays close friends with an ex",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A message arrives late at night",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A friend becomes close to my partner",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A partner admires someone’s looks",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A partner wants a night out alone every week",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "Someone flirts with my partner, who doesn’t notice",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A partner talks often about a colleague",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    },
+    {
+     "type": "number",
+     "label": "A past relationship comes up in conversation",
+     "min": 0,
+     "max": 10,
+     "hint": "0 not at all – 10 very jealous"
+    }
+   ],
+   "prompts": [
+    "I feel calmer when…",
+    "Do the readings change with trust, distance or stress?"
+   ],
+   "emerges": "Which situations sit highest, and what do they have in common? What influences feelings of security?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/jealousy.pdf"
+  },
+  {
+   "slug": "loveledger",
+   "key": "ledger",
+   "title": "The Love Ledger",
+   "where": "Care observation extension",
+   "time": "5 minutes a day for seven days",
+   "explore": "Much care goes unrecorded: the lift to the station, the remembered appointment, the bins taken out. A ledger makes it visible.",
+   "drawsOn": "diary methods and gratitude journalling, from positive psychology",
+   "steps": [
+    "Each evening, note moments of care or affection given and received, in any relationship.",
+    "Note the form each took: words, time, help, touch, attention, something made or bought."
+   ],
+   "fields": [
+    {
+     "type": "paper",
+     "label": "days"
+    }
+   ],
+   "prompts": [
+    "I noticed receiving…",
+    "I often give care by…"
+   ],
+   "emerges": "Which forms of care are most visible? What tends to go unnoticed? Does the ledger need to balance?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/ledger.pdf"
+  },
+  {
+   "slug": "sevendayloveexperiment",
+   "key": "experiment",
+   "title": "The Seven-Day Love Experiment",
+   "where": "After completing the manifesto",
+   "time": "a few minutes a day for seven days",
+   "explore": "Small changes in behaviour can feel surprisingly unfamiliar. A week is long enough to notice.",
+   "drawsOn": "behavioural experiments, from cognitive behavioural therapy (CBT)",
+   "steps": [
+    "Choose one constructive behaviour to practise for seven days: listening without interrupting, saying thank you specifically, putting the phone away at meals.",
+    "Each day, note what happened."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "The behaviour",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "paper",
+     "label": "days"
+    }
+   ],
+   "prompts": [
+    "The hardest day was… because…",
+    "Did anyone else notice?"
+   ],
+   "emerges": "What changed? What felt unfamiliar? Is the behaviour worth continuing?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/experiment.pdf"
+  },
+  {
+   "slug": "lovebudget",
+   "key": "budget",
+   "title": "The Love Budget",
+   "where": "Time and energy extension",
+   "time": "15 minutes",
+   "explore": "Emotional energy is finite. Where it goes, and where it would ideally go, are not always the same.",
+   "drawsOn": "time and energy audits, used in coaching",
+   "steps": [
+    "Divide the first bar among relationships, responsibilities and personal needs as they are now: rest, work, caring, friends, family, romance, myself.",
+    "Divide the second bar as I would prefer. A key beside each bar keeps track."
+   ],
+   "fields": [
+    {
+     "type": "paper",
+     "label": "bars"
+    }
+   ],
+   "prompts": [
+    "I would like to spend more on…",
+    "I could spend less on…"
+   ],
+   "emerges": "Which differences between the bars are within reach, and which depend on circumstances?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/budget.pdf"
+  },
+  {
+   "slug": "wordsleftunsaid",
+   "key": "swallowed",
+   "title": "Words Left Unsaid",
+   "where": "With Kanemori and Tadami",
+   "time": "10 minutes",
+   "explore": "Some things go unsaid out of kindness, fear, habit or timing.",
+   "drawsOn": "expressive writing, from psychologist James Pennebaker’s research",
+   "steps": [
+    "Privately note five things left unsaid in relationships, past or present. A word or a symbol is enough.",
+    "Fold this page’s corner down to keep it private."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "1",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "2",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "3",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "4",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "5",
+     "sub": "",
+     "rows": 2
+    }
+   ],
+   "prompts": [
+    "Is anything here worth saying now? Is anything better left unsaid?"
+   ],
+   "emerges": "Are the unsaid things mostly appreciative, critical or vulnerable? What prevented their expression?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/swallowed.pdf"
+  },
+  {
+   "slug": "forgivenessscale",
+   "key": "forgiveness",
+   "title": "The Forgiveness Scale",
+   "where": "Repair extension, after the Ideal Apology",
+   "time": "15 minutes",
+   "explore": "Disappointments and betrayals differ, and so does the difficulty of forgiving them. Forgiveness is never an obligation.",
+   "drawsOn": "forgiveness research in psychology",
+   "steps": [
+    "Number the situations from easiest (1) to hardest (10) to forgive."
+   ],
+   "fields": [
+    {
+     "type": "number",
+     "label": "A forgotten birthday",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "Turning up late without warning",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "A confidence shared with someone else",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "A harsh word in an argument",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "Money borrowed and not returned",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "A promise broken more than once",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "Being let down at an important moment",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "A lie told to avoid an argument",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "Credit taken for something I did",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    },
+    {
+     "type": "number",
+     "label": "Flirting with someone else",
+     "min": 1,
+     "max": 10,
+     "hint": "1 easiest to forgive"
+    }
+   ],
+   "prompts": [
+    "I could forgive… if…",
+    "What distinguishes a disappointment from a breach of trust?"
+   ],
+   "emerges": "Where is the line, and has it moved over time?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/forgiveness.pdf"
+  },
+  {
+   "slug": "lastargument",
+   "key": "argument",
+   "title": "The Last Argument",
+   "where": "Conflict reflection",
+   "time": "20 minutes",
+   "explore": "Disagreements are made of events, assumptions, feelings and responses, often tangled together.",
+   "drawsOn": "thought records, from cognitive behavioural therapy (CBT)",
+   "steps": [
+    "Reconstruct a recent, minor disagreement with anyone: a friend, colleague, relative or partner. This isn’t the place for anything distressing.",
+    "Separate it into its parts."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "What happened",
+     "sub": "",
+     "rows": 4
+    },
+    {
+     "type": "text",
+     "label": "What I assumed",
+     "sub": "",
+     "rows": 4
+    },
+    {
+     "type": "text",
+     "label": "What I felt",
+     "sub": "",
+     "rows": 4
+    },
+    {
+     "type": "text",
+     "label": "What I did",
+     "sub": "",
+     "rows": 4
+    }
+   ],
+   "prompts": [
+    "I assumed… but it might have meant…"
+   ],
+   "emerges": "Which part was hardest to fill in? Where might a different interpretation have changed the outcome?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/argument.pdf"
+  },
+  {
+   "slug": "relationshipweatherreport",
+   "key": "weather",
+   "title": "The Relationship Weather Report",
+   "where": "Relationship check-in",
+   "time": "10 minutes",
+   "explore": "Relationships have climates as well as weather.",
+   "drawsOn": "weather check-ins, used in therapy groups and classrooms",
+   "steps": [
+    "Choose a relationship of any kind. Use the symbols, or invent new ones, to describe its conditions today, over the past month and over the past year."
+   ],
+   "fields": [
+    {
+     "type": "paper",
+     "label": "weather"
+    }
+   ],
+   "prompts": [
+    "When it’s foggy, I tend to…",
+    "How do responses change during uncertainty or conflict?"
+   ],
+   "emerges": "Is today’s weather typical of the climate?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/weather.pdf"
+  },
+  {
+   "slug": "otherpersonschair",
+   "key": "chair",
+   "title": "The Other Person’s Chair",
+   "where": "Perspective-taking extension",
+   "time": "15 minutes",
+   "explore": "Intentions are felt from the inside; behaviour is experienced from the outside. Imagining the other side of a relationship can show where the two part company.",
+   "drawsOn": "perspective-taking; related to the ‘empty chair’ of Gestalt therapy",
+   "steps": [
+    "Choose a relationship of any kind and describe a typical moment from my side.",
+    "Then describe the same moment as the other person might experience it, imagining their day, their history and what they can see."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "What I intend",
+     "sub": "",
+     "rows": 7
+    },
+    {
+     "type": "text",
+     "label": "What they may experience",
+     "sub": "",
+     "rows": 7
+    }
+   ],
+   "prompts": [
+    "I mean… but it may come across as…",
+    "What would the other person want me to know?"
+   ],
+   "emerges": "Which parts of the picture were hardest to imagine? Where might intention and impact diverge?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/chair.pdf"
+  },
+  {
+   "slug": "innercriticinterview",
+   "key": "critic",
+   "title": "The Inner Critic Interview",
+   "where": "Self-regard extension",
+   "time": "20 minutes",
+   "explore": "A self-critical voice often has strong opinions about love. Giving it a fair interview can show what it assumes.",
+   "drawsOn": "inner-critic work in compassion-focused therapy and voice dialogue",
+   "steps": [
+    "Write a short conversation in which a kinder voice interviews the critical one: what it fears, what it wants, where it learned its views."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "Friend",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Critic",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Friend",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Critic",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Friend",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Critic",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Friend",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Critic",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Friend",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "Critic",
+     "sub": "",
+     "rows": 2
+    }
+   ],
+   "prompts": [
+    "The critic is trying to protect me from…"
+   ],
+   "emerges": "Which of the critic’s claims would I accept from a friend? What assumptions came out of the conversation?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/critic.pdf"
+  },
+  {
+   "slug": "selfdate",
+   "key": "selfdate",
+   "title": "The Self-Date",
+   "where": "Self-regard extension",
+   "time": "10 minutes to plan, plus the outing",
+   "explore": "Time alone can be restful, awkward, adventurous or all three.",
+   "drawsOn": "the ‘artist date’ of Julia Cameron’s The Artist’s Way",
+   "steps": [
+    "Plan and enjoy an activity alone: a meal, a walk, a film, a gallery, a swim."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "Where",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "When",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "What I’ll do",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "My notes",
+     "sub": "",
+     "rows": 7
+    }
+   ],
+   "prompts": [
+    "I enjoyed…",
+    "I felt self-conscious when…"
+   ],
+   "emerges": "What made the time alone satisfying or uncomfortable? Would I do it again, and what would change?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/selfdate.pdf"
+  },
+  {
+   "slug": "permissionslip",
+   "key": "permission",
+   "title": "The Permission Slip",
+   "where": "With the Boundary Garden",
+   "time": "10 minutes",
+   "explore": "Some changes start with permission rather than effort.",
+   "drawsOn": "self-compassion practice; ‘permission slips’ were popularised by Brené Brown",
+   "steps": [
+    "Complete five permission slips."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "I give myself permission to…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "I give myself permission to…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "I give myself permission to…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "I give myself permission to…",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "I give myself permission to…",
+     "sub": "",
+     "rows": 2
+    }
+   ],
+   "prompts": [
+    "The hardest one to sign was…"
+   ],
+   "emerges": "Which permissions feel most significant? Who usually grants them?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/permission.pdf"
+  },
+  {
+   "slug": "invisiblegift",
+   "key": "gift",
+   "title": "The Invisible Gift",
+   "where": "With care and reciprocity readings",
+   "time": "10 minutes to plan, plus the gesture",
+   "explore": "Giving without recognition takes the exchange out of a gift. What remains?",
+   "drawsOn": "positive psychology studies of acts of kindness",
+   "steps": [
+    "Plan and offer one thoughtful gesture without seeking recognition or creating an obligation: a returned favour, a repaired object, a kind word passed on. Choose something the recipient would welcome."
+   ],
+   "fields": [
+    {
+     "type": "text",
+     "label": "The gesture",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "For whom",
+     "sub": "",
+     "rows": 2
+    },
+    {
+     "type": "text",
+     "label": "My notes",
+     "sub": "",
+     "rows": 6
+    }
+   ],
+   "prompts": [
+    "It was hard not to mention…",
+    "Does a gift need to be known about to count?"
+   ],
+   "emerges": "How did it feel to give without a response? What makes giving satisfying?",
+   "variation": null,
+   "pdf": "/docs/onlovebook/gift.pdf"
+  }
+ ],
+ "poems": [
+  {
+   "id": "cabo-verde",
+   "title": "The Power of Love",
+   "original": "Força de Cretcheu",
+   "poet": "Eugénio Tavares",
+   "country": "Cabo Verde",
+   "year": "c. 1920",
+   "note": "Eugénio Tavares, from the island of Brava, made the morna, Cabo Verde’s slow song of longing, into poetry, and he wrote in Cape Verdean Creole when Portuguese colonial rule treated it as a mere dialect. Many of his mornas grew from the partings of an island of emigrants and sailors, and they are still sung today.",
+   "group": "Reciprocity",
+   "firstLines": [
+    "There is nothing in this life",
+    "Greater than love;"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#cabo-verde"
+  },
+  {
+   "id": "paraguay",
+   "title": "To Two Black Eyes",
+   "original": "Tesa hu mokõime",
+   "poet": "Ignacio Alberto Pane",
+   "country": "Paraguay",
+   "year": "before 1920",
+   "note": "Ignacio Alberto Pane was a Paraguayan poet, teacher and politician who wrote in both Spanish and Guaraní, the Indigenous language spoken by most Paraguayans. Writing poetry in Guaraní was a statement of pride at a time when educated society favoured Spanish.",
+   "group": "Attraction",
+   "firstLines": [
+    "Two chopí birds that share one nest",
+    "never leave each other at all;"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#paraguay"
+  },
+  {
+   "id": "somalia",
+   "title": "Two Somali Love Songs",
+   "original": "Šáqlan Gédi-bā",
+   "poet": "Traditional Somali songs; as printed by Leo Reinisch, 1900",
+   "country": "Somalia",
+   "year": "1900",
+   "note": "Somali was not commonly written until 1972, so its poetry lived in memory and performance. The Austrian linguist Leo Reinisch took these songs down from Somali speakers and printed them in 1900, one of the earliest records of Somali love song.",
+   "group": "Somali songs diptych",
+   "firstLines": [
+    "Shaqlan, daughter of Gedi, truly:",
+    "crowds go out to her;"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#somalia"
+  },
+  {
+   "id": "azerbaijan",
+   "title": "My love has made me weary of my life",
+   "original": "Məni candan usandırdı",
+   "poet": "Fuzuli",
+   "country": "Azerbaijan",
+   "year": "c. 1530",
+   "note": "Fuzuli lived in sixteenth-century Iraq, then ruled by the Ottomans, and wrote in Azerbaijani, Persian and Arabic. His ghazals and his Leyli and Majnun are the heart of classical Azerbaijani poetry, and in 1908 Uzeyir Hajibeyov made Leyli and Majnun into the first opera of the Muslim East.",
+   "group": "Passion and cost",
+   "firstLines": [
+    "My love has made me weary of my life: will she never weary of cruelty?",
+    "The heavens have caught fire from my sighs: will the candle of my longing never burn?"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#azerbaijan"
+  },
+  {
+   "id": "peru",
+   "title": "A Dead Idyll",
+   "original": "Idilio muerto",
+   "poet": "César Vallejo",
+   "country": "Peru",
+   "year": "1919",
+   "note": "César Vallejo wrote this in Lima, homesick for the Andean town of Santiago de Chuco where he grew up, and published it in his first book, Los heraldos negros (1919). He later moved to Paris and died there in 1938; he is often called the greatest Peruvian poet.",
+   "group": "Distance and memory",
+   "firstLines": [
+    "What can my sweet Andean Rita be doing at this hour,",
+    "Rita of reeds and wild cherries,"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#peru"
+  },
+  {
+   "id": "cuba",
+   "title": "To Him — In the flattering dawn",
+   "original": "A él — En la aurora lisonjera",
+   "poet": "Gertrudis Gómez de Avellaneda",
+   "country": "Cuba",
+   "year": "c. 1850",
+   "note": "Gertrudis Gómez de Avellaneda left Cuba for Spain as a young woman and became one of the great Romantic writers in Spanish. Her novel Sab (1841) is one of the earliest novels in Spanish to condemn slavery.",
+   "group": "Longing",
+   "firstLines": [
+    "The years flew by, and still, in vain,",
+    "I went on searching for my beautiful vision…"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#cuba"
+  },
+  {
+   "id": "greece",
+   "title": "Ode to Aphrodite",
+   "original": "Ode to Aphrodite",
+   "poet": "Sappho",
+   "country": "Greece",
+   "year": "c. 600 BCE",
+   "note": "Sappho lived on the island of Lesbos around 600 BCE and was so admired that later Greeks called her the tenth Muse. Almost all her work is lost; this prayer to Aphrodite is the only poem to survive complete, because an ancient critic quoted it as an example of perfect style.",
+   "group": "Desire and prayer",
+   "firstLines": [
+    "And what I most wish to happen",
+    "For my maddened heart. “Whom now shall I persuade"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#greece"
+  },
+  {
+   "id": "tunisia",
+   "title": "Prayers in the Temple of Love",
+   "original": "صلوات في هيكل الحب",
+   "poet": "Abu al-Qasim al-Shabbi",
+   "country": "Tunisia",
+   "year": "1931",
+   "note": "Abu al-Qasim al-Shabbi is Tunisia’s national poet, writing when Tunisia was a French protectorate; lines from his poem “The Will to Live” are in the Tunisian national anthem. He died in 1934, aged 25.",
+   "group": "Devotion",
+   "firstLines": [
+    "You are sweet as childhood, as dreams,",
+    "as a melody, as a new morning,"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#tunisia"
+  },
+  {
+   "id": "indonesia",
+   "title": "The Fragrance of Your Hair",
+   "original": "Harum Rambutmu",
+   "poet": "Amir Hamzah",
+   "country": "Indonesia",
+   "year": "1932",
+   "note": "Amir Hamzah, from the royal family of Langkat in Sumatra, was the leading poet of the Pujangga Baru movement that shaped modern Indonesian literature. He wrote the poems of Buah Rindu (Fruits of Longing) as a young man in Java; he was killed in 1946, in the violent upheaval that followed independence.",
+   "group": "Sensory memory",
+   "firstLines": [
+    "I break off a flower’s stem and kiss it,",
+    "Though it is the true fragrance I am seeking;"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#indonesia"
+  },
+  {
+   "id": "united-states",
+   "title": "Wild nights! Wild nights!",
+   "original": "Wild nights! Wild nights!",
+   "poet": "Emily Dickinson",
+   "country": "United States",
+   "year": "1891",
+   "note": "Emily Dickinson wrote nearly 1,800 poems in Amherst, Massachusetts, but only about ten were published in her lifetime. Her first editors hesitated over printing this one in 1891 because of its passion; whom it was written for is still debated.",
+   "group": "Desire",
+   "firstLines": [
+    "Wild nights! Wild nights!",
+    "Were I with thee,"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#united-states"
+  },
+  {
+   "id": "pakistan",
+   "title": "Calling Ranjha, Ranjha, I myself have become Ranjha",
+   "original": "رانجھا رانجھا کردی نی میں",
+   "poet": "Bulleh Shah",
+   "country": "Pakistan",
+   "year": "c. 1740",
+   "note": "Bulleh Shah, an eighteenth-century Sufi poet from Kasur, now in Pakistan, retold the Punjabi love story of Heer and Ranjha as a song of the soul’s union with God. Heer loves Ranjha so completely that she becomes him; Takht Hazara, in the last line, is Ranjha’s village.",
+   "group": "Love and devotional union",
+   "firstLines": [
+    "Calling “Ranjha, Ranjha”, O friends, I myself have become Ranjha.",
+    "Call me Dhido Ranjha, friends; let no one call me Heer."
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#pakistan"
+  },
+  {
+   "id": "haiti",
+   "title": "Far from you, near you",
+   "original": "Loin de toi, près de toi",
+   "poet": "Etzer Vilaire",
+   "country": "Haiti",
+   "year": "1914",
+   "note": "Etzer Vilaire was a poet from Jérémie, on Haiti's south-west coast, a town so rich in writers that it is called the City of Poets. He was among the leading voices of Haitian poetry around 1900, and his collected poems were published in Paris in 1914.",
+   "group": "Distance",
+   "firstLines": [
+    "Far from you, it is night,",
+    "the sad and sombre night,"
+   ],
+   "url": "https://visioninglab.github.io/lovemanifesto/#haiti"
+  }
+ ],
+ "questionnaire": {
+  "intro": [
+   "This questionnaire explores how you naturally experience and express love across three core dimensions: Mind (intellectual connection, communication, shared values), Body (physical affection, presence, sensory care), and Soul (emotional vulnerability, spiritual resonance, intuitive safety).",
+   "Even just reading through the questions will provide insight into what resonates. There is no need to decide on an answer, just to notice: which one provokes a reaction - ‘Ah, this speaks to me’?",
+   "Read it thinking about not only other humans but also pets, ideas, hobbies…"
+  ],
+  "questions": [
+   {
+    "question": "When you first feel yourself falling for someone, what is the spark?",
+    "options": [
+     "A conversation where hours disappear and your thoughts feel completely seen.",
+     "An intense magnetic chemistry and the comforting warmth of their closeness.",
+     "An unexplainable sense of calm, familiarity and emotional recognition."
+    ]
+   },
+   {
+    "question": "After a long, draining week, what makes you feel most restored by a loved one?",
+    "options": [
+     "Debriefing the week together, untangling your thoughts, or collaborating on a fun project.",
+     "A long hug, a massage or simply lying together in quiet physical contact.",
+     "Sitting together in peaceful stillness, feeling completely accepted without needing to speak."
+    ]
+   },
+   {
+    "question": "What form of affirmation hits you the deepest?",
+    "options": [
+     "I love the way your brain works; you always inspire me to think differently.",
+     "You are radiant and being near you grounds my whole body.",
+     "I trust you with the deepest parts of who I am; you understand my spirit."
+    ]
+   },
+   {
+    "question": "When a conflict occurs, what is essential for you to feel repaired?",
+    "options": [
+     "A logical, constructive breakdown of what went wrong and an agreed-upon solution.",
+     "A reassuring touch, holding hands during the discussion, or physical comfort once the tension drops.",
+     "Sincere emotional vulnerability, mutual forgiveness, and feeling spiritually realigned."
+    ]
+   },
+   {
+    "question": "What shared experience feels most like true intimacy to you?",
+    "options": [
+     "Reading the same book, debating philosophy, or learning a complex new skill together.",
+     "Cooking a rich meal together, dancing, hiking, or exploring a new place on foot.",
+     "Sharing unspoken feelings under the night sky, meditating together, or discussing life’s larger purpose."
+    ]
+   },
+   {
+    "question": "If you want to show someone you love them, what is your most instinctive gesture?",
+    "options": [
+     "Recommending an article or playlist tailored to them, or helping them solve a persistent dilemma.",
+     "Preparing their favourite comfort food, rubbing their shoulders or initiating closeness.",
+     "Offering absolute presence when they are hurting, holding space for their emotions without judgment."
+    ]
+   },
+   {
+    "question": "What makes you feel disconnected or lonely in a partnership, even if they are in the room?",
+    "options": [
+     "Feeling intellectually bored, misunderstood or having conversations stay strictly surface-level.",
+     "A lack of physical warmth, avoidance of eye contact or a partner pulling away from touch.",
+     "Emotional guardedness, cynicism or feeling like your deeper inner worlds never touch."
+    ]
+   },
+   {
+    "question": "What does \"safety\" feel like with a partner?",
+    "options": [
+     "Clarity, honesty and knowing where both of you stand through open dialogue.",
+     "Physical sanctuary, tactile grounding, and the relaxation of your nervous system with them.",
+     "Unconditional acceptance, where your flaws, shadows and quirks are welcomed."
+    ]
+   },
+   {
+    "question": "How do you prefer to mark an anniversary or meaningful milestone?",
+    "options": [
+     "Exchanging thoughtful, reflective letters that articulate how you’ve grown together.",
+     "A retreat focused on sensory indulgence, rest and connection.",
+     "Revisiting a meaningful place to reflect on your journey or a private ritual of gratitude."
+    ]
+   },
+   {
+    "question": "What legacy do you most want your relationship to leave?",
+    "options": [
+     "A partnership of mutual growth, brilliant ideas and continuous curiosity.",
+     "A haven of tangible comfort, health, vitality and lived sensory joy.",
+     "A profound, transformative bond that helps both of you become your truest selves."
+    ]
+   }
+  ],
+  "closing": "Most loving relationships will be combinations of these characteristics. Knowing and understanding yourself in this way, helps work out what to look for in others."
+ },
+ "playlist": {
+  "songs": [
+   "Love Is a Stranger, Eurythmics (Annie Lennox, David A. Stewart, 1982)",
+   "Love Is a Battlefield, Pat Benatar (Holly Knight, Mike Chapman, 1983)",
+   "Love Is a Losing Game, Amy Winehouse (Amy Winehouse, 2006)",
+   "Love Is the Drug, Roxy Music (Bryan Ferry, Andy Mackay, 1975)",
+   "Love Is Noise, The Verve (Richard Ashcroft, Nick McCabe, Simon Jones, Peter Salisbury, 2008)",
+   "Love Is Blindness, U2 (Bono, The Edge, Adam Clayton, Larry Mullen Jr., 1991)",
+   "Love Is an Open Door, Kristen Bell, Santino Fontana / Frozen Cast (Kristen Anderson-Lopez, Robert Lopez, 2013)",
+   "Love Is Strange, Mickey & Sylvia (Bo Diddley, Mickey Baker, Sylvia Robinson, 1956)",
+   "Love Is Only a Feeling, The Darkness (Justin Hawkins, Dan Hawkins, Frankie Poullain, Ed Graham, 2003)"
+  ],
+  "intro": "Think about the following statements. To what extent do you agree or disagree?",
+  "statements": [
+   "Love Is a Stranger",
+   "Love Is a Battlefield",
+   "Love is a fate resigned",
+   "Love is the Drug",
+   "Love Is Noise",
+   "Love Is Blindness",
+   "Love Is an Open Door",
+   "Love Is Strange",
+   "Love Is Only a Feeling",
+   "Love Is Us"
+  ]
+ },
+ "manifesto": [
+  "I believe love is…",
+  "I show love by…",
+  "I want to be loved with…",
+  "I will give… and I will not give…",
+  "I hope…"
+ ],
+ "gathering": [
+  "A first definition of love, and one inherited idea I keep or reconsider",
+  "How I give care, in one action or pattern",
+  "A need I can name, and one way to ask for it",
+  "Something I can commit to, including a limit or a way to repair"
+ ]
+}

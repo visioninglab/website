@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import Passport from "@/components/onlovebook/Passport";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -13,8 +14,6 @@ export const metadata: Metadata = {
   description:
     "A journal in progress by Dr Jessica Symons: love poems from around the world, activities and a personal manifesto for love. Draft PDF, EPUB and companion activities.",
   alternates: { canonical: "/onlove/book/" },
-  // Hidden for now: not linked from anywhere, not in the sitemap, and not indexed.
-  robots: { index: false, follow: false },
   openGraph: {
     title: "Eight Billion Ways to Love",
     description:
@@ -55,16 +54,21 @@ const sections = [
   "My Manifesto for Love",
 ];
 
+const explore = [
+  { href: "/onlove/book/activities/", title: "Activities", text: "Twenty-three more activities. Draw a card, or choose by how much time there is." },
+  { href: "/onlove/book/poems/", title: "Poems", text: "More poems from the collection. Turn a card over to see who wrote it." },
+  { href: "/onlove/book/questionnaire/", title: "Questionnaire", text: "Ten questions about mind, body and soul, one card at a time." },
+  { href: "/onlove/book/playlist/", title: "Playlist", text: "Songs that say what love is. Agree, disagree, and find my own verse." },
+  { href: "/onlove/book/manifesto/", title: "My manifesto", text: "Write it line by line, seal it, and print it." },
+];
+
 const linkClass =
   "text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary";
 
 export default function OnLoveBookPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 pt-32 pb-16 md:pb-24">
+    <div className="mx-auto max-w-6xl px-6 pt-12 pb-16 md:pb-24">
       <FadeIn>
-        <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-          <Link href="/onlove">On Love</Link>
-        </p>
         <h1 className="font-[family-name:var(--font-source-serif)] text-3xl font-bold tracking-tight md:text-5xl">
           Eight Billion <span className="text-gradient">Ways to Love</span>
         </h1>
@@ -110,6 +114,29 @@ export default function OnLoveBookPage() {
             </div>
           </div>
         </div>
+      </FadeIn>
+
+      <FadeIn delay={0.15}>
+        <h2 className="mt-20 font-[family-name:var(--font-source-serif)] text-2xl font-bold tracking-tight md:text-3xl">
+          Beyond the <span className="text-gradient">book</span>
+        </h2>
+        <p className="mt-3 max-w-2xl text-muted-foreground">
+          A companion to play with alongside the journal. Everything written or chosen here stays in
+          this browser.
+        </p>
+        <div className="mt-8">
+          <Passport />
+        </div>
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {explore.map((x) => (
+            <li key={x.href}>
+              <Link href={x.href} className="group block h-full rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40">
+                <h3 className="font-[family-name:var(--font-source-serif)] text-lg font-bold group-hover:text-primary">{x.title} →</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.text}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </FadeIn>
 
       <FadeIn delay={0.2}>
