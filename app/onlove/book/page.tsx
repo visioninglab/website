@@ -60,6 +60,7 @@ const explore = [
   { href: "/onlove/book/questionnaire/", title: "Questionnaire", text: "Ten questions about mind, body and soul, one card at a time." },
   { href: "/onlove/book/playlist/", title: "Playlist", text: "Songs that say what love is. Agree, disagree, and find my own verse." },
   { href: "/onlove/book/manifesto/", title: "My manifesto", text: "Write it line by line, seal it, and print it." },
+  { href: "/onlove/book/resources/", title: "Love research", text: "162 talks and studies from the Institute on Love Studies, to search or stumble on." },
 ];
 
 const linkClass =

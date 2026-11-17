@@ -10,6 +10,7 @@ const items = [
   { href: "/onlove/book/questionnaire/", label: "Questionnaire" },
   { href: "/onlove/book/playlist/", label: "Playlist" },
   { href: "/onlove/book/manifesto/", label: "My manifesto" },
+  { href: "/onlove/book/resources/", label: "Love research" },
 ];
 
 export default function BookNav() {
