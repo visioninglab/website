@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+import EmailLink from "@/components/EmailLink";
 
 export const metadata: Metadata = {
   title: "Collaborate",
@@ -64,12 +65,7 @@ export default function CollaboratePage() {
             <div className="mt-10 border-t border-border pt-6">
               <p className="text-sm text-muted-foreground">
                 Email:{" "}
-                <a
-                  href="mailto:hello@visioninglab.com"
-                  className="text-primary underline underline-offset-2"
-                >
-                  hello@visioninglab.com
-                </a>
+                <EmailLink className="text-primary underline underline-offset-2" />
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
                 LinkedIn:{" "}

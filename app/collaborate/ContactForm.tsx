@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import EmailLink from "@/components/EmailLink";
 
 // Replace with your Formspree form ID from https://formspree.io
 const FORMSPREE_ID = "xjgeggga";
@@ -117,7 +118,7 @@ export default function ContactForm() {
 
       {error && (
         <p className="text-sm text-red-600">
-          Something went wrong. Please try again or email hello@visioninglab.com directly.
+          Something went wrong. Please try again, or email <EmailLink className="underline underline-offset-2" /> directly.
         </p>
       )}
 

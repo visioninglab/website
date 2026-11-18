@@ -3,6 +3,7 @@
 import Link from "next/link";
 import FadeIn from "./FadeIn";
 import EditableText from "./EditableText";
+import EmailLink from "./EmailLink";
 
 const pathways = [
   { label: "Research partnership", href: "/collaborate" },
@@ -42,12 +43,7 @@ export default function CollaborateCTA() {
           </div>
           <p className="mt-10 text-sm text-muted-foreground">
             Or email directly:{" "}
-            <a
-              href="mailto:hello@visioninglab.com"
-              className="text-primary underline underline-offset-2 transition-colors hover:text-glow"
-            >
-              hello@visioninglab.com
-            </a>
+            <EmailLink className="text-primary underline underline-offset-2 transition-colors hover:text-glow" />
           </p>
         </FadeIn>
       </div>

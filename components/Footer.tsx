@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailLink from "./EmailLink";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -63,12 +64,10 @@ export default function Footer() {
                 >
                   Collaborate
                 </Link>
-                <a
-                  href="mailto:hello@visioninglab.com"
+                <EmailLink
+                  label="Email"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Email
-                </a>
+                />
               </div>
             </div>
           </div>
