@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import ResearchLibrary from "@/components/onlovebook/ResearchLibrary";
 import { research } from "@/lib/onlovebook/resources";
@@ -37,6 +38,20 @@ export default function ResourcesPage() {
             early or proposed work.
           </p>
         </div>
+      </FadeIn>
+
+      <FadeIn delay={0.05} className="mt-10">
+        <Link
+          href="/onlove/book/resources/china/"
+          className="block max-w-2xl rounded-2xl border border-primary/40 bg-primary/5 p-6 transition-transform hover:-translate-y-0.5"
+        >
+          <p className="text-xs font-medium uppercase tracking-widest text-primary">Read the research</p>
+          <p className="mt-2 font-[family-name:var(--font-source-serif)] text-2xl font-bold tracking-tight">Love in China</p>
+          <p className="mt-2 text-muted-foreground">
+            From a three-thousand-year-old song to marriage markets, patriotic love letters and hired boyfriends:
+            what four researchers say love means in China now.
+          </p>
+        </Link>
       </FadeIn>
 
       <FadeIn delay={0.1} className="mt-10">
